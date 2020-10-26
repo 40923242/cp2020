@@ -16,38 +16,38 @@
 <p>Copyright ©2020 All rights reserved | This template is made with<span> </span><i aria-hidden="true" class="icon-heart"></i><span> </span>by<span> </span><a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
 </div>
 </div>
-<p><br/><br/><a class="module-heading" href="https://oli.cmu.edu/jcourse/webui/syllabus/module.do?context=d87f2f560a0001dc2ff545a38a5faff0"><span></span></a><span>作業進度</span></p>
+<h1>作業進度</h1>
 <table>
 <tbody>
-<tr>
-<td>week</td>
-<td>目標</td>
-<td>完成進度</td>
+<tr style="height: 16.7188px;">
+<td style="height: 16.7188px;">week</td>
+<td style="height: 16.7188px;">目標</td>
+<td style="height: 16.7188px;">完成進度</td>
 </tr>
-<tr>
-<td>W1:</td>
-<td>建立倉儲</td>
-<td>100%</td>
+<tr style="height: 16px;">
+<td style="height: 16px;">W1:</td>
+<td style="height: 16px;">建立倉儲</td>
+<td style="height: 16px;">100%</td>
 </tr>
-<tr>
-<td><span>W2:</span></td>
-<td><span>建立網頁</span></td>
-<td><span>100%</span></td>
+<tr style="height: 16px;">
+<td style="height: 16px;"><span>W2:</span></td>
+<td style="height: 16px;"><span>建立網頁</span></td>
+<td style="height: 16px;"><span>100%</span></td>
 </tr>
-<tr>
-<td><span>W4:</span></td>
-<td><span>PC Hardware帳號建立</span></td>
-<td>100%</td>
+<tr style="height: 16px;">
+<td style="height: 16px;"><span>W4:</span></td>
+<td style="height: 16px;"><span>PC Hardware帳號建立</span></td>
+<td style="height: 16px;">100%</td>
 </tr>
-<tr>
-<td>W5:<span></span></td>
-<td><span>完成英翻中文放到網頁上</span><span></span></td>
-<td><span>PCH14:30%</span></td>
+<tr style="height: 16px;">
+<td style="height: 16px;">W5:<span></span></td>
+<td style="height: 16px;"><span>完成英翻中文放到網頁上</span><span></span></td>
+<td style="height: 16px;"><span>PCH14:30%</span></td>
 </tr>
-<tr>
-<td>W6:</td>
-<td><span></span></td>
-<td><span></span></td>
+<tr style="height: 15px;">
+<td style="height: 15px;">W6:</td>
+<td style="height: 15px;"><span></span></td>
+<td style="height: 15px;"><span></span></td>
 </tr>
 </tbody>
 </table>
@@ -82,6 +82,91 @@
 <p>TCP還支持稱為窗口化的概念。如果您曾經從Windows操作系統上的網絡共享驅動器中復製過文件，則會看到窗口。您是否曾經註意到通過網絡複製文件時，它可能會說“剩餘2分鐘”直到完成，然後跳到“剩餘3小時”，然後又跳回到“剩餘30分鐘”？這是TCP窗口在起作用。</p>
 <p>本質上，當使用TCP建立通信會話時，它首先執行三向握手。接下來，它以較小的窗口大小開始，如下面的圖片中的窗口大小1所示，其中單個段通過網絡發送並確認。如果成功，它將窗口大小增加到2，一次發送兩個段。它繼續執行此操作，每次增加段數，在每個窗口中傳輸更多數據，直到發生錯誤並必須重新傳輸為止。如果發生錯誤，TCP知道它一定傳輸速度太快，因此它縮小了窗口以減慢通信速度。隨著傳輸成功進行，它將再次增加窗口以在每個窗口中推送更多數據。不斷調整此窗口大小，以使每個窗口獲得最多的段，並且通信錯誤最少。</p>
 <p><img alt="" height="328" src="/images/image3.png" width="513"/></p>
+<h3>P107 TCP IP Stack</h3>
+<p>Each client and server has an IP address. Clients and servers are identified on the network by their IP addresses. In addition to an IP address, each machine has numerous “ports” that we can utilize. A port is an endpoint to a logical connection. A client program specifies a particular server program on a computer in a network by identifying a port. Ports allow a single client to communicate simultaneously with multiple other devices, separating each session by using a designated port number.</p>
+<p>每個客戶端和服務器都有一個IP地址。 客戶端和服務器通過其IP地址在網絡上進行標識。 除了IP地址外，每台機器都有許多我們可以利用的“端口”。 端口是邏輯連接的端點。 客戶端程序通過識別端口來指定網絡中計算機上的特定服務器程序。 端口允許單個客戶端與多個其他設備同時通信，並使用指定的端口號分隔每個會話。</p>
+<p>example</p>
+<p>The best way to envision this is to think of an apartment building. Your building’s address may be 123 Main Street; this would be equivalent to your IP address. But how does the mailman know which door to use when delivering your package, since multiple families live at 123 Main Street? The mailman uses your apartment number, which defines which door in the building he would knock on to deliver your package. These apartment doors would be called ports in a computer, and the computer knows which programs and sessions requested information over the network by tracking the port numbers that make the requests.</p>
+<p>設想此問題的最佳方法是考慮一棟公寓樓。 您的建築物的地址可能是大街123號； 這相當於您的IP地址。 但是由於多個家庭居住在Main Street 123號，郵遞員如何知道在運送包裹時要使用哪扇門？ 郵遞員使用您的公寓號碼，該號碼定義了他敲樓時要送出包裹的門。 這些公寓門在計算機中稱為端口，計算機通過跟踪發出請求的端口號來知道哪些程序和會話在網絡上請求了信息。</p>
+<p>example</p>
+<p>Similar to an apartment building, on the network, let’s assume the client has an IP address of 10.1.1.1, which we call the source IP. The computer’s web browser chose a port number of 1248 from which to initiate the communication and a destination of 172.16.1.2 (which would be a web server for some company) and a destination port of 80 (which is the common port number for all web page traffic). The server then replies from its IP address (172.16.1.2) and port 80 to the client who made the request at their IP address of 10.1.1.1 and port 1248. As they continue the conversation, they will continue to use these IP addresses and ports, and at the same time the web server can maintain other communications with other customers, just like the client can surf to other websites in other tabs in their browser simultaneously without mixing the data, since they are separated by the port numbers. The diagram below illustrates this communication.</p>
+<p>與網絡上的公寓樓類似，我們假設客戶端的IP地址為10.1.1.1，我們將其稱為源IP。 計算機的Web瀏覽器選擇了用於發起通信的端口號1248，以及目的地172.16.1.2（對於某些公司而言將是Web服務器）和目的端口80（這是所有Web站點的通用端口號）。 頁面訪問量）。 然後，服務器從其IP地址（172.16.1.2）和端口80答复給以其IP地址10.1.1.1和端口1248發出請求的客戶端。隨著他們繼續進行對話，他們將繼續使用這些IP地址和 端口，同時Web服務器可以維持與其他客戶的其他通信，就像客戶端可以同時瀏覽其瀏覽器其他選項卡中的其他網站而無需混合數據一樣，因為它們由端口號分隔。 下圖說明了這種通信。</p>
+<p></p>
+<p>Port numbers are considered either well-known or ephemeral. Well-known port numbers are between 1 and 1023, like the web browsing port number of 80 in our last example. Port 80 is reserved as a well-known port for all hypertext transfer protocol (HTTP) traffic. Ephemeral port numbers are considered “high-numbered” ports and start at 1024 and go up to 65,535. These are usually the ports used by the client making the request, as we saw in our web browsing example, above, when the client chose port 1248 as its requesting port.</p>
+<p>端口號被認為是眾所周知的或短暫的。 眾所周知的端口號在1到1023之間，例如我們上一個示例中的Web瀏覽端口號80。 端口80保留為所有超文本傳輸協議（HTTP）通信的眾所周知的端口。 臨時端口號被認為是“高編號”端口，起始於1024，最高可達65,535。 這些通常是客戶端發出請求的端口，正如我們在上面的Web瀏覽示例中所見，當客戶端選擇端口1248作為其請求端口時。</p>
+<p><img alt="" height="313" src="/images/image4.png" width="504"/></p>
+<h3>P108 Networking Transfer Protocols</h3>
+<p>TCP/IP contains a suite of many different transfer protocols for routing information across networks. Each protocol uses a different well-known port to keep its traffic separate from the others. Web browsing occurs using either hypertext transfer protocol (HTTP) or hypertext transfer protocol secure (HTTPS). When it uses HTTP, it uses port 80. If, however, the client requests that the site be sent securely using encryption, then it uses the HTTPS protocol and port 443. When being sent securely, the client and server use either secure sockets layer (SSL) or transport layer security (TLS). These additional layers are put on top of the existing HTTP standard to encrypt the data connection between the client and the server.</p>
+<p>In addition to browsing the web, there are many other things that can be done on the network and each uses its own dedicated port number to keep the traffic separate. File transfer protocol (FTP) uses port 21. FTP is a standard network protocol used to transfer computer files from one host to another host over a TCP-based network, such as the Internet. FTP is built on a client-server architecture and uses separate control and data connections between the client and the server.</p>
+<div class="tlid-input input">
+<div class="source-wrap">
+<div class="input-full-height-wrapper tlid-input-full-height-wrapper">
+<div class="source-input">
+<div class="source-footer-wrap source-or-target-footer">
+<div class="source-footer">
+<div class="speech-wrap source-or-target-footer-button left-positioned">
+<div aria-disabled="true" aria-label="請選擇一種要啟用語音輸入的特定語言" aria-pressed="false" class="speech-button goog-toolbar-button goog-toolbar-button-disabled" data-tooltip="請選擇一種要啟用語音輸入的特定語言" data-tooltip-align="t,c" id="gt-speech" role="button"><span class="jfk-button-img"></span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tlid-results-container results-container">
+<div class="tlid-result result-dict-wrapper">
+<div class="result tlid-copy-target">
+<div class="result-header">
+<div aria-label="收藏翻譯" class="starbutton jfk-button-flat jfk-button unstarred" data-tooltip="收藏翻譯" data-tooltip-align="t,c" role="button" tabindex="0">
+<div class="jfk-button-img"></div>
+</div>
+</div>
+<div class="text-wrap tlid-copy-target">
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">TCP / IP包含一套用於在網絡之間路由信息的許多不同的傳輸協議。每種協議使用不同的眾所周知的端口，以使其流量彼此獨立。使用超文本傳輸協議（HTTP）或安全超文本傳輸協議（HTTPS）進行Web瀏覽。當使用HTTP時，它將使用端口80。但是，如果客戶端請求使用加密安全地發送站點，則它將使用HTTPS協議和端口443。在安全發送時，客戶端和服務器將使用安全套接字層（SSL）或傳輸層安全性（TLS）。這些額外的層放在現有HTTP標準之上，以加密客戶端和服務器之間的數據連接。<br/><br/>除了瀏覽Web之外，網絡上還有許多其他事情可以完成，並且每件事都使用自己的專用端口號來使流量分開。文件傳輸協議（FTP）使用端口21。FTP是一種標準網絡協議，用於通過基於TCP的網絡（例如Internet）將計算機文件從一台主機傳輸到另一台主機。 FTP建立在客戶端-服務器體系結構上，並在客戶端和服務器之間使用單獨的控制和數據連接。</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">Telnet is a text-based remote access program for computers that communicates over port 23. Telnet is a user command and an underlying TCP/IP protocol for accessing computers remotely. Through telnet, an administrator or another user can access someone else's computer remotely. Unfortunately, telnet is an unsecured protocol where all the information between the client and server is communicated in clear text, so anyone who can capture this data can read it easily. For this reason, secure shell (SSH), which uses port 22, was introduced to replace telnet. SSH is a cryptographic (encrypted) network protocol for initiating text-based shell sessions on remote machines, similar to telnet but with the added strength of encryption.<br/><br/>The domain name system (DNS) is a hierarchical distributed naming system for computers, services, or any resource connected to the Internet or to a private network. It allows for the translation of IP addresses to domain names, and from domain names to IP addresses. Remote desktop protocol (RDP) is a proprietary protocol developed by Microsoft, which provides users with a graphical interface to connect to other computers over a network connection using port 3389. The user employs RDP client software for this purpose, while the other computer must run RDP server software. RDP is a huge step up over telnet and SSH, because you receive a graphical environment to control the other user’s machine, just as if you were sitting in front of their Windows desktop.</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">Telnet是用於通過端口23進行通信的計算機的基於文本的遠程訪問程序。Telnet是用戶命令和用於遠程訪問計算機的基礎TCP / IP協議。通過telnet，管理員或其他用戶可以遠程訪問其他人的計算機。不幸的是，telnet是一種不安全的協議，其中客戶端與服務器之間的所有信息都以明文形式進行通信，因此任何可以捕獲此數據的人都可以輕鬆地讀取它。因此，引入了使用端口22的安全外殼（SSH）來代替telnet。 SSH是一種加密（加密）網絡協議，用於在遠程計算機上啟動基於文本的Shell會話，類似於telnet，但具有增強的加密強度。<br/><br/>域名系統（DNS）是用於計算機，服務或連接到Internet或專用網絡的任何資源的分層分佈式命名系統。它允許將IP地址轉換為域名，也可以將域名轉換為IP地址。遠程桌面協議（RDP）是Microsoft開發的專有協議，它為用戶提供圖形界面以使用端口3389通過網絡連接連接到其他計算機。用戶為此目的使用RDP客戶端軟件，而另一台計算機必須運行RDP服務器軟件。 RDP是telnet和SSH的一大進步，因為您將獲得一個圖形化的環境來控制其他用戶的計算機，就像坐在他們的Windows桌面前一樣。</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">Simple network management protocol (SNMP) is a popular protocol for network management. It is used for collecting information from and configuring network devices, such as servers, printers, hubs, switches, and routers, on an Internet protocol (IP) network. SNMP traffic is sent over port 161.<br/><br/>Server message block (SMB) is a network protocol used for providing shared access to files, printers, and serial ports and miscellaneous communications between nodes on a network using port 139.<br/><br/>The lightweight directory access protocol (LDAP) is a directory service protocol that runs over port 389. LDAP provides a mechanism used to connect to, search, and modify Internet directories. The LDAP directory service is based on a client-server model.</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">簡單網絡管理協議（SNMP）是用於網絡管理的流行協議。 它用於從Internet協議（IP）網絡上的服務器，打印機，集線器，交換機和路由器等網絡設備收集信息並對其進行配置。 SNMP通信通過端口161發送。<br/><br/>服務器消息塊（SMB）是一種網絡協議，用於提供對文件，打印機和串行端口的共享訪問以及使用端口139的網絡上節點之間的其他通信。<br/><br/>輕型目錄訪問協議（LDAP）是在端口389上運行的目錄服務協議。LDAP提供了一種用於連接，搜索和修改Internet目錄的機制。 LDAP目錄服務基於客戶端-服務器模型。</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"> </span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">Email</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">Email has evolved a lot over the years, but still operates on three main protocols. Simple mail transfer protocol (SMTP) is an Internet standard for sending email and most outbound email is sent using SMTP. SMTP uses port 25 to send email from network devices.<br/><br/>POP3 is the most common account type for personal email, but messages are typically deleted from the server when you check your email.<br/><br/>Internet message access protocol (IMAP) servers let you work with email messages without downloading them to your computer first. This allows for email to be synchronized (synced) across multiple devices, including your desktop, laptop, tablet, and smartphone. IMAP uses port 143 to receive and synchronize your email. The real benefit of using IMAP, especially in today’s multiple device access world, is that it can change the read and delete state of messages across the multiple devices. For example, if I read a message on my phone, when I log into my desktop, the message will also show as having been read already.<br/></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">多年來，電子郵件已經有了很大的發展，但是仍然可以在三種主要協議上運行。簡單郵件傳輸協議（SMTP）是用於發送電子郵件的Internet標準，大多數出站電子郵件都是使用SMTP發送的。 SMTP使用端口25從網絡設備發送電子郵件。<br/><br/>POP3是最常見的個人電子郵件帳戶類型，但是當您檢查電子郵件時，通常會將郵件從服務器中刪除。<br/><br/>Internet郵件訪問協議（IMAP）服務器使您可以處理電子郵件，而無需先將其下載到計算機上。這允許跨多個設備（包括台式機，筆記本電腦，平板電腦和智能手機）同步電子郵件。 IMAP使用端口143接收和同步您的電子郵件。使用IMAP的真正好處（尤其是在當今的多設備訪問世界中）是，它可以更改跨多個設備的消息的讀取和刪除狀態。例如，如果我在手機上閱讀了一條消息，則當我登錄到桌面時，該消息也將顯示為已被閱讀。</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">P109 FTP</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">In the OSI (Open Systems Interconnection) model, the application layer uses protocols such as trivial file transfer protocol (TFTP), file transfer protocol (FTP), and file transfer protocol secure (FTPS using TLS/SSL) to allow users to migrate data in a client-server model. FTP concerns itself with data only and as such eliminates the overhead of extraneous information such as what HTTP allows in addition to the actual data (advertisements, banners, images, etc.). This alleviates processing and bandwidth overhead and allows the client to simply retrieve the data from the server.<br/><br/>FTP services can be accessed using client software such as ftp.exe (provided in all Microsoft operating systems), third-party software such as Filezilla or WinSCP, and any modern/current browser. Most light-duty users outside a corporate environment will not use a client FTP (or its secure version) because web browsers can negotiate FTP as well as HTTP. Public FTP servers allow for an anonymous user name so the client can reach file directories specifically designed for public access.<br/><br/>These network communications are passed through the presentation layer to the session layer, where sockets and sessions are created using logical port numbers as defined by TCP or UDP. TCP is stateful, connection-oriented and reliable. UDP is stateless, connectionless, and less reliable. The combination of source and destination address coupled with the logical port number creates a network socket, which establishes the session for process-to-process communication. The material in this section is used under CC-BY license from<a href="https://en.wikipedia.org/wiki/Transport_layer" id="_i_0" lang="" target="_blank">https://en.wikipedia.org/wiki/Transport_layer</a><span>.</span></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span></span></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span>在OSI（開放系統互連）模型中，應用程序層使用諸如簡單文件傳輸協議（TFTP），文件傳輸協議（FTP）和安全文件傳輸協議（使用TLS / SSL的FTPS）之類的協議來允許用戶遷移數據在客戶端-服務器模型中。 FTP僅關注數據本身，因此消除了額外信息的開銷，例如除了實際數據（廣告，橫幅，圖像等）外，HTTP允許的信息。這減輕了處理和帶寬開銷，並使客戶端可以簡單地從服務器檢索數據。<br/><br/>可以使用客戶端軟件（例如ftp.exe（在所有Microsoft操作系統中提供），第三方軟件（例如Filezilla或WinSCP）以及任何現代/最新的瀏覽器）訪問FTP服務。公司環境之外的大多數輕型用戶將不會使用客戶端FTP（或其安全版本），因為Web瀏覽器可以協商FTP以及HTTP。公用FTP服務器允許使用匿名用戶名，以便客戶端可以訪問專門為公用訪問而設計的文件目錄。<br/><br/>這些網絡通信通過表示層傳遞到會話層，在會話層中，使用由TCP或UDP定義的邏輯端口號創建套接字和會話。 TCP是有狀態的，面向連接的且可靠的。 UDP是無狀態，無連接且可靠性較低的。源地址和目標地址以及邏輯端口號的組合創建了一個網絡套接字，該網絡套接字建立了進程間通信的會話。本節中的材料根據CC-BY許可使用<a href="https://en.wikipedia.org/wiki/Transport_layer" id="_i_0" lang="" target="_blank">https://en.wikipedia.org/wiki/Transport_layer</a><span>.</span></span></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">Active vs. Passive</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">Active FTP is a point-to-point connection that the client initiates and connects to the FTP server port 21 for commands and port 20 for data. That means that the server will actively initiate the connections back to the client’s listening port and will require the client to allow these connections, which the firewall blocks by default. Passive FTP allows the client to initiate the data connection on port 21, and then the FTP server moves the command and data connections to random ports on the server (with numbers higher than 1023). By initiating the connection from the client side, the burden of allowing a pass-through on the firewall resides with the FTP server administrator, who is better equipped to set a range of ports allowing connectivity.</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">活動FTP是客戶端發起的點對點連接，並連接到FTP服務器的21號端口（用於命令）和20號端口（用於數據）。 這意味著服務器將主動發起與客戶端偵聽端口的連接，並要求客戶端允許這些連接，防火牆默認情況下會阻止這些連接。 被動FTP允許客戶端在端口21上啟動數據連接，然後FTP服務器將命令和數據連接移至服務器上的隨機端口（數字大於1023）。 通過從客戶端啟動連接，防火牆上允許通過的負擔就由FTP服務器管理員承擔，後者可以更好地設置允許連接的端口範圍。</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">For more information on active vs. passive FTP, visit this<a href="http://slacksite.com/other/ftp.html" id="_i_1" lang="" target="_blank">website</a><span>.</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">有關主動與被動FTP的更多信息，請訪問此<a href="http://slacksite.com/other/ftp.html" id="_i_1" lang="" target="_blank">website</a><span>.</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">Using FTP</div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">Accessing FTP public servers using the command line is not nearly as user-friendly as using a web browser. However, both methods are viable and in use in corporate networks.<br/><br/>Open a web browser of choice<br/>Use this URL: ftp.funet.fi<br/>Click “pubs,” then “standards,” then “RFC”<br/>Search RFC 959 and access either the .txt or .pdf file (left-click)<br/>Search RFC 4217 and access either the .txt or .pdf file (left-click)<br/>If you actually needed the file you can right-click and save as.</div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">使用命令行訪問FTP公共服務器並不像使用Web瀏覽器那樣友好。 但是，這兩種方法都是可行的，並已在公司網絡中使用。<br/><br/><span>打開選擇的網絡瀏覽器</span><br/>使用此URL：ftp.funet.fi<br/>點擊“發布”，然後點擊“標準”，然後點擊“ RFC”<br/>搜索RFC 959並訪問.txt或.pdf文件（單擊鼠標左鍵）<br/>搜索RFC 4217並訪問.txt或.pdf文件（單擊鼠標左鍵）<br/>如果您確實需要該文件，則可以右鍵單擊並另存為。</div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">Now that you see the file structure, notice it is similar to navigating a local hard drive with the only difference being that you use the “/” (forward slash) instead of the “\” (backslash) because you are accessing the folders through the Internet.<br/><br/>Note: In this next step using the command-line interface, you will only be able to navigate the FTP server, and will not be able to transfer files, because ftp.exe does not support passive mode by default. You can use a command-line tool in a Linux Distro; or, in Windows, you can go to Passive-FTP.com and download the freeware.<br/><br/>However, you can create a workaround by first allowing FTP through your firewall (be sure to put firewall restrictions back in place after the exercise), and then issuing the following commands after you enter the password:</div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">現在您已經看到文件結構，請注意，它類似於瀏覽本地硬盤驅動器，唯一的區別是您使用“ /”（正斜杠）而不是“ \”（反斜杠），因為您通過以下方式訪問文件夾 互聯網。<br/><br/>注意：在接下來的使用命令行界面的步驟中，您將只能瀏覽FTP服務器，並且將無法傳輸文件，因為ftp.exe默認情況下不支持被動模式。 您可以在Linux Distro中使用命令行工具。 或者，在Windows中，您可以轉到Passive-FTP.com並下載免費軟件。<br/><br/>但是，您可以通過以下方法來創建變通辦法：首先允許FTP通過防火牆（請確保在練習後將防火牆限制放回原處），然後在輸入密碼後發出以下命令</div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+</div>
+</div>
+</div>
+</div>
 <h2>Develop</h2>
 <p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
 <p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>

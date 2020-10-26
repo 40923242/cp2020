@@ -1,101 +1,139 @@
-<h1>About</h1>
-<div id="tipue_search_content">
-<p>此內容管理系統以 <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 作為 submodule 運作, 可以選定對應的版本運作, cmsimde 可以持續改版, 不會影響之前設為 submodule, 使用舊版 cmsimde 模組的內容管理相關運作.</p>
-<h4>利用 cmsimde 建立靜態網誌方法:</h4>
-<p>1. 在 github 建立倉儲, git clone 到近端</p>
-<p>2. 參考 <a href="https://github.com/mdecourse/newcms">https://github.com/mdecourse/newcms</a>, 加入除了 cmsimde 目錄外的所有內容</p>
-<p>以 git submodule add <a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> cmsimde</p>
-<p>建立 cmsimde 目錄, 並從 github 取下子模組內容.</p>
-<p>3.在近端維護時, 更換目錄到倉儲中的 cmsimde, 以 python wsgi.py 啟動近端網際伺服器.</p>
-<p>動態內容編輯完成後, 以 generate_pages 轉為靜態內容, 以 git add commit 及 push 將內容推到遠端.</p>
-<p>4. 之後若要以 git clone 取下包含 submodule 的所有內容, 執行:</p>
-<p>git clone --recurse-submodules<span> </span><a href="https://github.com/mdecourse/newcms.git">https://github.com/mdecourse/newcms.git</a></p>
-<br/><a href="https://40823152.github.io/cp2020/content/%E4%BD%9C%E6%A5%AD%E9%80%B2%E5%BA%A6.html">Next</a><span> </span>&gt;&gt; 作業進度</div>
-<div class="container">
-<div class="row pt-3 mx-auto">
-<p>Copyright ©2020 All rights reserved | This template is made with<span> </span><i aria-hidden="true" class="icon-heart"></i><span> </span>by<span> </span><a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
-</div>
-</div>
-<h1>作業進度</h1>
-<table>
-<tbody>
-<tr style="height: 16.7188px;">
-<td style="height: 16.7188px;">week</td>
-<td style="height: 16.7188px;">目標</td>
-<td style="height: 16.7188px;">完成進度</td>
-</tr>
-<tr style="height: 16px;">
-<td style="height: 16px;">W1:</td>
-<td style="height: 16px;">建立倉儲</td>
-<td style="height: 16px;">100%</td>
-</tr>
-<tr style="height: 16px;">
-<td style="height: 16px;"><span>W2:</span></td>
-<td style="height: 16px;"><span>建立網頁</span></td>
-<td style="height: 16px;"><span>100%</span></td>
-</tr>
-<tr style="height: 16px;">
-<td style="height: 16px;"><span>W4:</span></td>
-<td style="height: 16px;"><span>PC Hardware帳號建立</span></td>
-<td style="height: 16px;">100%</td>
-</tr>
-<tr style="height: 16px;">
-<td style="height: 16px;">W5:<span></span></td>
-<td style="height: 16px;"><span>完成英翻中文放到網頁上</span><span></span></td>
-<td style="height: 16px;"><span>PCH14:30%</span></td>
-</tr>
-<tr style="height: 15px;">
-<td style="height: 15px;">W6:</td>
-<td style="height: 15px;"><span></span></td>
-<td style="height: 15px;"><span></span></td>
-</tr>
-</tbody>
-</table>
-<h1>W1作業</h1>
-<h2>PCH 14 TCP and UDP Protocols</h2>
-<h3>P105 Overview</h3>
-<p>In this lesson, we will discuss transmission control protocol (TCP) and user datagram protocol (UDP), as well as their associated ports and protocols. We will specifically address the various email ports and protocols in use today, as well as discussing secure sockets layer/transport layer security (SSL/TLS) in the context of web security. Then, we will discuss file transfer protocol (FTP) and hypertext transfer protocol (HTTP) and their use on the Internet today, as well as some older technologies such as Telnet and its more secure alternative, secure shell (SSH).</p>
-<p><span><span>在本課程中，我們將討論傳輸控制協議（TCP）和用戶數據報協議（UDP）以及它們相關的端口和協議。</span><span>我們將專門解決當今使用的各種電子郵件端口和協議，並在Web安全的背景下討論安全套接字層/傳輸層安全（SSL / TLS）。</span><span>然後，我們將討論文件傳輸協議（FTP）和超文本傳輸協議（HTTP）及其在當今Internet上的使用，以及一些較老的技術，例如Telnet及其更安全的替代方法，安全外殼（SSH）。</span></span></p>
-<h3>P106 TCP and UDP</h3>
-<p>TCP is a connection-oriented protocol that ensures the reliable transport of data segments from one device to another. During transmission, if a segment is dropped, it will be detected and resent or retransmitted by the originator device. Each communication is acknowledged upon receipt, providing a secure model to ensure successful communications. This type of transmission is great for all network data types, especially those that need delivery to be assured.</p>
-<p>When a TCP communication is initiated, the originator and receiver perform a “three-way handshake” before starting the data transmission. In the first step, the originator sends a packet with a synchronization (SYN) flag set. Next, the receiver acknowledges receipt of this SYN flagged packet by sending back a synchronization-acknowledged (SYN-ACK) flagged packet. Finally, the originator sends an acknowledgement of the synchronization-acknowledged flagged packet, and then data transmission occurs.</p>
-<p id="N106A0" lang=""><span>TCP是一種面向連接的協議，可確保將數據段從一台設備可靠地傳輸到另一台設備。在傳輸過程中，如果某個段丟失，則發起方設備將檢測到該段並將其重新發送或重新發送。每次通信在收到後都會得到確認，從而提供一個安全的模型來確保成功進行通信。這種傳輸方式適用於所有網絡數據類型，尤其是那些需要確保傳輸的數據類型。</span></p>
-<p id="N106A3" lang=""><span><span>當啟動TCP通信時，發起方和接收方在開始數據傳輸之前執行“三向握手”。</span><span>第一步，發起方發送一個設置了同步（SYN）標誌的數據包。</span><span>接下來，接收器通過發回一個同步確認（SYN-ACK）標記數據包來確認此SYN標記數據包的接收。</span><span>最後，始發者發送對已同步確認的標記數據包的確認，然後發生數據傳輸。</span></span></p>
-<p lang=""><span><span></span></span>Example</p>
-<p lang="">Think of this like two students who want to discuss an important project that is upcoming. The first student, Bob, says to Jane, “Jane, I want to talk to you.” Next, Jane says, “Bob, I acknowledge that you want to talk to me and I am ready to listen.” Finally, Bob tells her, “Jane, I understand you are ready to listen. Let’s talk.” At this point, the two students can talk, knowing they are both ready to listen to each other.</p>
-<p lang="">就像兩個想討論即將開展的重要項目的學生一樣。 第一位學生<span>Bob</span>對Jane說：“Jane，我想和你說話。” 接下來，<span>Jane</span>說：“<span>Bob</span>，我承認你想和我說話，我已經準備好傾聽。” 最後，Bob告訴她：“<span>Jane</span>，我知道你已經準備好聽了。 讓我們談談。” 此時，兩個學生可以交談，知道他們倆都準備好了互相傾聽。</p>
-<p><img alt="" height="355" src="/images/image1.png" width="289"/></p>
-<p>UDP, or user datagram protocol, was developed as a connectionless protocol in order to increase the speed of the network over TCP transmissions. Because of the three-way handshake in TCP, as well as all the delivery assurance and quality control, TCP has a good amount of network overhead that slows down its communications. Network engineers realized that sometimes you don’t need delivery assurance or quality control. So UDP was established.</p>
-<p>UDP is considered unreliable, because if a segment is dropped during transmission, the sending device doesn’t know and doesn’t care. There is no retransmission. Once data is sent, it is gone. This is good, though, for audio and video streaming. In these applications, the data transferred is enormously large, and if a single segment is dropped it doesn’t affect the overall quality of the audio or video sent.</p>
-<p>UDP（或用戶數據報協議）被開發為無連接協議，目的是通過TCP傳輸提高網絡速度。 由於TCP中的三向握手以及所有的交付保證和質量控制，TCP具有大量的網絡開銷，從而降低了其通信速度。 網絡工程師意識到有時您不需要交付保證或質量控制。 這樣就建立了UDP。</p>
-<p>UDP被認為是不可靠的，因為如果在傳輸過程中丟棄了網段，則發送設備將不知道也不在乎。 沒有重傳。 數據一旦發送，就消失了。 但是，這對於音頻和視頻流來說是很好的。 在這些應用中，傳輸的數據非常大，如果丟棄單個片段，則不會影響所發送的音頻或視頻的整體質量。</p>
-<p><span>Example</span></p>
-<p><span>I like to think of UDP as my college calculus teacher. He started at one side of the board at 8 a.m., and by 9 a.m. he was done at the other side of the board. He never asked if the students understood what he said or wrote, he just kept transmitting. This is a great example of UDP.</span></p>
-<p><span>我喜歡將UDP視為我的大學微積分老師。 他在上午8點從董事會的一側開始，到上午9點，他在董事會的另一側完成了工作。 他從不問學生是否理解他所說或寫的內容，他只是不斷地傳播。 這是UDP的一個很好的例子。</span></p>
-<p><span><img alt="" height="295" src="/images/image2.png" width="304"/></span></p>
-<p><span>TCP Vs. UDP</span></p>
-<p><span>TCP and UDP have many differences. TCP is reliable, but UDP is unreliable. TCP focuses on connection-oriented communications using the three-way handshake, while UDP is connectionless. TCP uses windowing, discussed in more detail later, to control the amount of data sent at a given time based on changing network speeds, but UDP simply transmits everything once with no windowing. TCP also supports segment sequencing; UDP just hopes it gets to the destination in the right order. Finally, TCP waits for acknowledgements, but UDP just hopes it got there. To simplify it, TCP is an assured and reliable communication method, UDP is just a best-effort model.</span></p>
-<p><span>TCP和UDP有很多區別。 TCP是可靠的，但UDP是不可靠的。 TCP專注於使用三向握手的面向連接的通信，而UDP是無連接的。 TCP使用加窗（稍後將詳細討論）來基於不斷變化的網絡速度來控制在給定時間發送的數據量，但是UDP僅傳輸所有信息一次而沒有加窗。 TCP還支持段排序； UDP只是希望它以正確的順序到達目的地。 最後，TCP等待確認，但是UDP只是希望它到達目的地。 為簡化起見，TCP是一種有保證且可靠的通信方法，UDP只是一種盡力而為的模型。</span></p>
-<p><span>TCP Windowing</span></p>
-<p>TCP also supports a concept called windowing. If you have ever copied a file from a network share drive on the Windows operating system, you have seen windowing. Have you ever noticed when you copy a file over the network, it may start out saying there are “2 minutes remaining” until completion, then it jumps up to “3 hours remaining,” then back down to “30 minutes remaining”? This is TCP windowing in action.</p>
-<p>Essentially, when a communication session is established with TCP, it first performs the three-way handshake. Next, it starts with a small window size, like windows size 1 in the image below, where a single segment is sent over the network and acknowledged. If this is successful, it increases the window size to 2, sending two segments at a time. It continues to do this, increasing the number of segments each time, transmitting more data in each window until an error occurs and retransmissions must be done. If errors occur, TCP understands that it must have been transmitting too fast, so it shrinks the window to slow down communication. As transmissions occur successfully, it again increases the window to push more data in each window. This window size is continually adjusted to get the most segments per window with the least errors in communication.</p>
-<p>TCP還支持稱為窗口化的概念。如果您曾經從Windows操作系統上的網絡共享驅動器中復製過文件，則會看到窗口。您是否曾經註意到通過網絡複製文件時，它可能會說“剩餘2分鐘”直到完成，然後跳到“剩餘3小時”，然後又跳回到“剩餘30分鐘”？這是TCP窗口在起作用。</p>
-<p>本質上，當使用TCP建立通信會話時，它首先執行三向握手。接下來，它以較小的窗口大小開始，如下面的圖片中的窗口大小1所示，其中單個段通過網絡發送並確認。如果成功，它將窗口大小增加到2，一次發送兩個段。它繼續執行此操作，每次增加段數，在每個窗口中傳輸更多數據，直到發生錯誤並必須重新傳輸為止。如果發生錯誤，TCP知道它一定傳輸速度太快，因此它縮小了窗口以減慢通信速度。隨著傳輸成功進行，它將再次增加窗口以在每個窗口中推送更多數據。不斷調整此窗口大小，以使每個窗口獲得最多的段，並且通信錯誤最少。</p>
-<p><img alt="" height="328" src="/images/image3.png" width="513"/></p>
-<h3>P107 TCP IP Stack</h3>
-<p>Each client and server has an IP address. Clients and servers are identified on the network by their IP addresses. In addition to an IP address, each machine has numerous “ports” that we can utilize. A port is an endpoint to a logical connection. A client program specifies a particular server program on a computer in a network by identifying a port. Ports allow a single client to communicate simultaneously with multiple other devices, separating each session by using a designated port number.</p>
-<p>每個客戶端和服務器都有一個IP地址。 客戶端和服務器通過其IP地址在網絡上進行標識。 除了IP地址外，每台機器都有許多我們可以利用的“端口”。 端口是邏輯連接的端點。 客戶端程序通過識別端口來指定網絡中計算機上的特定服務器程序。 端口允許單個客戶端與多個其他設備同時通信，並使用指定的端口號分隔每個會話。</p>
-<p>example</p>
-<p>The best way to envision this is to think of an apartment building. Your building’s address may be 123 Main Street; this would be equivalent to your IP address. But how does the mailman know which door to use when delivering your package, since multiple families live at 123 Main Street? The mailman uses your apartment number, which defines which door in the building he would knock on to deliver your package. These apartment doors would be called ports in a computer, and the computer knows which programs and sessions requested information over the network by tracking the port numbers that make the requests.</p>
-<p>設想此問題的最佳方法是考慮一棟公寓樓。 您的建築物的地址可能是大街123號； 這相當於您的IP地址。 但是由於多個家庭居住在Main Street 123號，郵遞員如何知道在運送包裹時要使用哪扇門？ 郵遞員使用您的公寓號碼，該號碼定義了他敲樓時要送出包裹的門。 這些公寓門在計算機中稱為端口，計算機通過跟踪發出請求的端口號來知道哪些程序和會話在網絡上請求了信息。</p>
-<p>example</p>
-<p>Similar to an apartment building, on the network, let’s assume the client has an IP address of 10.1.1.1, which we call the source IP. The computer’s web browser chose a port number of 1248 from which to initiate the communication and a destination of 172.16.1.2 (which would be a web server for some company) and a destination port of 80 (which is the common port number for all web page traffic). The server then replies from its IP address (172.16.1.2) and port 80 to the client who made the request at their IP address of 10.1.1.1 and port 1248. As they continue the conversation, they will continue to use these IP addresses and ports, and at the same time the web server can maintain other communications with other customers, just like the client can surf to other websites in other tabs in their browser simultaneously without mixing the data, since they are separated by the port numbers. The diagram below illustrates this communication.</p>
-<p>與網絡上的公寓樓類似，我們假設客戶端的IP地址為10.1.1.1，我們將其稱為源IP。 計算機的Web瀏覽器選擇了用於發起通信的端口號1248，以及目的地172.16.1.2（對於某些公司而言將是Web服務器）和目的端口80（這是所有Web站點的通用端口號）。 頁面訪問量）。 然後，服務器從其IP地址（172.16.1.2）和端口80答复給以其IP地址10.1.1.1和端口1248發出請求的客戶端。隨著他們繼續進行對話，他們將繼續使用這些IP地址和 端口，同時Web服務器可以維持與其他客戶的其他通信，就像客戶端可以同時瀏覽其瀏覽器其他選項卡中的其他網站而無需混合數據一樣，因為它們由端口號分隔。 下圖說明了這種通信。</p>
-<p></p>
-<p>Port numbers are considered either well-known or ephemeral. Well-known port numbers are between 1 and 1023, like the web browsing port number of 80 in our last example. Port 80 is reserved as a well-known port for all hypertext transfer protocol (HTTP) traffic. Ephemeral port numbers are considered “high-numbered” ports and start at 1024 and go up to 65,535. These are usually the ports used by the client making the request, as we saw in our web browsing example, above, when the client chose port 1248 as its requesting port.</p>
-<p>端口號被認為是眾所周知的或短暫的。 眾所周知的端口號在1到1023之間，例如我們上一個示例中的Web瀏覽端口號80。 端口80保留為所有超文本傳輸協議（HTTP）通信的眾所周知的端口。 臨時端口號被認為是“高編號”端口，起始於1024，最高可達65,535。 這些通常是客戶端發出請求的端口，正如我們在上面的Web瀏覽示例中所見，當客戶端選擇端口1248作為其請求端口時。</p>
-<p><img alt="" height="313" src="/images/image4.png" width="504"/></p>
-<h3>P108 Networking Transfer Protocols</h3>
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923242 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923242 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='作業進度.html'>作業進度</a><li class='has-children'><a href='W1作業.html'>W1作業</a><ul class='dropdown'><li class='has-children'><a href='PCH 14 TCP and UDP Protocols.html'>PCH 14 TCP and UDP Protocols</a><ul class='dropdown'><li><a href='P105 Overview.html'>P105 Overview</a><li><a href='P106 TCP and UDP.html'>P106 TCP and UDP</a><li><a href='P107 TCP IP Stack.html'>P107 TCP IP Stack</a><li><a href='P108 Networking Transfer Protocols.html'>P108 Networking Transfer Protocols</a></li></ul><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='TEST.html'>TEST</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">P107 TCP IP Stack << <a href='P107 TCP IP Stack.html'>Previous</a> <a href='Develop.html'>Next</a> >> Develop<br /><h1>P108 Networking Transfer Protocols</h1>
 <p>TCP/IP contains a suite of many different transfer protocols for routing information across networks. Each protocol uses a different well-known port to keep its traffic separate from the others. Web browsing occurs using either hypertext transfer protocol (HTTP) or hypertext transfer protocol secure (HTTPS). When it uses HTTP, it uses port 80. If, however, the client requests that the site be sent securely using encryption, then it uses the HTTPS protocol and port 443. When being sent securely, the client and server use either secure sockets layer (SSL) or transport layer security (TLS). These additional layers are put on top of the existing HTTP standard to encrypt the data connection between the client and the server.</p>
 <p>In addition to browsing the web, there are many other things that can be done on the network and each uses its own dedicated port number to keep the traffic separate. File transfer protocol (FTP) uses port 21. FTP is a standard network protocol used to transfer computer files from one host to another host over a TCP-based network, such as the Internet. FTP is built on a client-server architecture and uses separate control and data connections between the client and the server.</p>
 <div class="tlid-input input">
@@ -161,14 +199,60 @@
 <div class="result-shield-container tlid-copy-target" tabindex="0">Now that you see the file structure, notice it is similar to navigating a local hard drive with the only difference being that you use the “/” (forward slash) instead of the “\” (backslash) because you are accessing the folders through the Internet.<br/><br/>Note: In this next step using the command-line interface, you will only be able to navigate the FTP server, and will not be able to transfer files, because ftp.exe does not support passive mode by default. You can use a command-line tool in a Linux Distro; or, in Windows, you can go to Passive-FTP.com and download the freeware.<br/><br/>However, you can create a workaround by first allowing FTP through your firewall (be sure to put firewall restrictions back in place after the exercise), and then issuing the following commands after you enter the password:</div>
 <div class="result-shield-container tlid-copy-target" tabindex="0"></div>
 <div class="result-shield-container tlid-copy-target" tabindex="0">現在您已經看到文件結構，請注意，它類似於瀏覽本地硬盤驅動器，唯一的區別是您使用“ /”（正斜杠）而不是“ \”（反斜杠），因為您通過以下方式訪問文件夾 互聯網。<br/><br/>注意：在接下來的使用命令行界面的步驟中，您將只能瀏覽FTP服務器，並且將無法傳輸文件，因為ftp.exe默認情況下不支持被動模式。 您可以在Linux Distro中使用命令行工具。 或者，在Windows中，您可以轉到Passive-FTP.com並下載免費軟件。<br/><br/>但是，您可以通過以下方法來創建變通辦法：首先允許FTP通過防火牆（請確保在練習後將防火牆限制放回原處），然後在輸入密碼後發出以下命令</div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
 </div>
 </div>
 </div>
 </div>
-<h2>Develop</h2>
-<p><a href="https://github.com/mdecourse/cmsimde">https://github.com/mdecourse/cmsimde</a> 的開發, 可以在一個目錄中放入 cmsimde, 然後將 up_dir 中的內容放到與 cmsimde 目錄同位階的地方, 使用 command 進入 cmsimde 目錄, 執行 python wsgi.py, 就可以啟動, 以瀏覽器 https://localhost:9443 就可以連接, 以 admin 作為管理者密碼, 就可以登入維護內容.</p>
-<p>cmsimde 的開發採用 Leo Editor, 開啟 cmsimde 目錄中的 cmsimde.leo 就可以進行程式修改, 結束後, 若要保留網際內容, 只要將 cmsimde 外部的內容倒回 up_dir 目錄中即可後續對 cmsimde 遠端倉儲進行改版.</p>
-<p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
-<p></p>
-<h3>TEST</h3>
-<p></p>
+<br />P107 TCP IP Stack << <a href='P107 TCP IP Stack.html'>Previous</a> <a href='Develop.html'>Next</a> >> Develop</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

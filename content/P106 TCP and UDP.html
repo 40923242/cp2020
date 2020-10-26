@@ -122,7 +122,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='W1作業.html'>W1作業</a><ul class='dropdown'><li class='has-children'><a href='PCH 14 TCP and UDP Protocols.html'>PCH 14 TCP and UDP Protocols</a><ul class='dropdown'><li><a href='P105 Overview.html'>P105 Overview</a><li><a href='P106 TCP and UDP.html'>P106 TCP and UDP</a></li></ul><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='TEST.html'>TEST</a></li>
+                     <li><a href='About.html'>About</a><li><a href='作業進度.html'>作業進度</a><li class='has-children'><a href='W1作業.html'>W1作業</a><ul class='dropdown'><li class='has-children'><a href='PCH 14 TCP and UDP Protocols.html'>PCH 14 TCP and UDP Protocols</a><ul class='dropdown'><li><a href='P105 Overview.html'>P105 Overview</a><li><a href='P106 TCP and UDP.html'>P106 TCP and UDP</a><li><a href='P107 TCP IP Stack.html'>P107 TCP IP Stack</a><li><a href='P108 Networking Transfer Protocols.html'>P108 Networking Transfer Protocols</a></li></ul><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='TEST.html'>TEST</a></li>
                       </ul>
                 </nav>
               </div>
@@ -133,7 +133,7 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">P105 Overview << <a href='P105 Overview.html'>Previous</a> <a href='Develop.html'>Next</a> >> Develop<br /><h1>P106 TCP and UDP</h1>
+    <div id="tipue_search_content">P105 Overview << <a href='P105 Overview.html'>Previous</a> <a href='P107 TCP IP Stack.html'>Next</a> >> P107 TCP IP Stack<br /><h1>P106 TCP and UDP</h1>
 <p>TCP is a connection-oriented protocol that ensures the reliable transport of data segments from one device to another. During transmission, if a segment is dropped, it will be detected and resent or retransmitted by the originator device. Each communication is acknowledged upon receipt, providing a secure model to ensure successful communications. This type of transmission is great for all network data types, especially those that need delivery to be assured.</p>
 <p>When a TCP communication is initiated, the originator and receiver perform a “three-way handshake” before starting the data transmission. In the first step, the originator sends a packet with a synchronization (SYN) flag set. Next, the receiver acknowledges receipt of this SYN flagged packet by sending back a synchronization-acknowledged (SYN-ACK) flagged packet. Finally, the originator sends an acknowledgement of the synchronization-acknowledged flagged packet, and then data transmission occurs.</p>
 <p id="N106A0" lang=""><span>TCP是一種面向連接的協議，可確保將數據段從一台設備可靠地傳輸到另一台設備。在傳輸過程中，如果某個段丟失，則發起方設備將檢測到該段並將其重新發送或重新發送。每次通信在收到後都會得到確認，從而提供一個安全的模型來確保成功進行通信。這種傳輸方式適用於所有網絡數據類型，尤其是那些需要確保傳輸的數據類型。</span></p>
@@ -159,7 +159,7 @@ img.add_border {
 <p>TCP還支持稱為窗口化的概念。如果您曾經從Windows操作系統上的網絡共享驅動器中復製過文件，則會看到窗口。您是否曾經註意到通過網絡複製文件時，它可能會說“剩餘2分鐘”直到完成，然後跳到“剩餘3小時”，然後又跳回到“剩餘30分鐘”？這是TCP窗口在起作用。</p>
 <p>本質上，當使用TCP建立通信會話時，它首先執行三向握手。接下來，它以較小的窗口大小開始，如下面的圖片中的窗口大小1所示，其中單個段通過網絡發送並確認。如果成功，它將窗口大小增加到2，一次發送兩個段。它繼續執行此操作，每次增加段數，在每個窗口中傳輸更多數據，直到發生錯誤並必須重新傳輸為止。如果發生錯誤，TCP知道它一定傳輸速度太快，因此它縮小了窗口以減慢通信速度。隨著傳輸成功進行，它將再次增加窗口以在每個窗口中推送更多數據。不斷調整此窗口大小，以使每個窗口獲得最多的段，並且通信錯誤最少。</p>
 <p><img alt="" height="328" src="./../images/image3.png" width="513"/></p>
-<br />P105 Overview << <a href='P105 Overview.html'>Previous</a> <a href='Develop.html'>Next</a> >> Develop</div>
+<br />P105 Overview << <a href='P105 Overview.html'>Previous</a> <a href='P107 TCP IP Stack.html'>Next</a> >> P107 TCP IP Stack</div>
         
     <!-- footer -->
       <div class="container">
