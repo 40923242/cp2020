@@ -133,20 +133,23 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">P106 TCP and UDP << <a href='P106 TCP and UDP.html'>Previous</a> <a href='P108 Networking Transfer Protocols.html'>Next</a> >> P108 Networking Transfer Protocols<br /><h1>P107 TCP IP Stack</h1>
-<p>Each client and server has an IP address. Clients and servers are identified on the network by their IP addresses. In addition to an IP address, each machine has numerous “ports” that we can utilize. A port is an endpoint to a logical connection. A client program specifies a particular server program on a computer in a network by identifying a port. Ports allow a single client to communicate simultaneously with multiple other devices, separating each session by using a designated port number.</p>
-<p>每個客戶端和服務器都有一個IP地址。 客戶端和服務器通過其IP地址在網絡上進行標識。 除了IP地址外，每台機器都有許多我們可以利用的“端口”。 端口是邏輯連接的端點。 客戶端程序通過識別端口來指定網絡中計算機上的特定服務器程序。 端口允許單個客戶端與多個其他設備同時通信，並使用指定的端口號分隔每個會話。</p>
-<p>example</p>
-<p>The best way to envision this is to think of an apartment building. Your building’s address may be 123 Main Street; this would be equivalent to your IP address. But how does the mailman know which door to use when delivering your package, since multiple families live at 123 Main Street? The mailman uses your apartment number, which defines which door in the building he would knock on to deliver your package. These apartment doors would be called ports in a computer, and the computer knows which programs and sessions requested information over the network by tracking the port numbers that make the requests.</p>
-<p>設想此問題的最佳方法是考慮一棟公寓樓。 您的建築物的地址可能是大街123號； 這相當於您的IP地址。 但是由於多個家庭居住在Main Street 123號，郵遞員如何知道在運送包裹時要使用哪扇門？ 郵遞員使用您的公寓號碼，該號碼定義了他敲樓時要送出包裹的門。 這些公寓門在計算機中稱為端口，計算機通過跟踪發出請求的端口號來知道哪些程序和會話在網絡上請求了信息。</p>
-<p>example</p>
-<p>Similar to an apartment building, on the network, let’s assume the client has an IP address of 10.1.1.1, which we call the source IP. The computer’s web browser chose a port number of 1248 from which to initiate the communication and a destination of 172.16.1.2 (which would be a web server for some company) and a destination port of 80 (which is the common port number for all web page traffic). The server then replies from its IP address (172.16.1.2) and port 80 to the client who made the request at their IP address of 10.1.1.1 and port 1248. As they continue the conversation, they will continue to use these IP addresses and ports, and at the same time the web server can maintain other communications with other customers, just like the client can surf to other websites in other tabs in their browser simultaneously without mixing the data, since they are separated by the port numbers. The diagram below illustrates this communication.</p>
-<p>與網絡上的公寓樓類似，我們假設客戶端的IP地址為10.1.1.1，我們將其稱為源IP。 計算機的Web瀏覽器選擇了用於發起通信的端口號1248，以及目的地172.16.1.2（對於某些公司而言將是Web服務器）和目的端口80（這是所有Web站點的通用端口號）。 頁面訪問量）。 然後，服務器從其IP地址（172.16.1.2）和端口80答复給以其IP地址10.1.1.1和端口1248發出請求的客戶端。隨著他們繼續進行對話，他們將繼續使用這些IP地址和 端口，同時Web服務器可以維持與其他客戶的其他通信，就像客戶端可以同時瀏覽其瀏覽器其他選項卡中的其他網站而無需混合數據一樣，因為它們由端口號分隔。 下圖說明了這種通信。</p>
-<p></p>
-<p>Port numbers are considered either well-known or ephemeral. Well-known port numbers are between 1 and 1023, like the web browsing port number of 80 in our last example. Port 80 is reserved as a well-known port for all hypertext transfer protocol (HTTP) traffic. Ephemeral port numbers are considered “high-numbered” ports and start at 1024 and go up to 65,535. These are usually the ports used by the client making the request, as we saw in our web browsing example, above, when the client chose port 1248 as its requesting port.</p>
-<p>端口號被認為是眾所周知的或短暫的。 眾所周知的端口號在1到1023之間，例如我們上一個示例中的Web瀏覽端口號80。 端口80保留為所有超文本傳輸協議（HTTP）通信的眾所周知的端口。 臨時端口號被認為是“高編號”端口，起始於1024，最高可達65,535。 這些通常是客戶端發出請求的端口，正如我們在上面的Web瀏覽示例中所見，當客戶端選擇端口1248作為其請求端口時。</p>
-<p><img alt="" height="313" src="./../images/image4.png" width="504"/></p>
-<br />P106 TCP and UDP << <a href='P106 TCP and UDP.html'>Previous</a> <a href='P108 Networking Transfer Protocols.html'>Next</a> >> P108 Networking Transfer Protocols</div>
+    <div id="tipue_search_content">P109 FTP << <a href='P109 FTP.html'>Previous</a> <a href='PHC15 Introduction to Wireless Networking.html'>Next</a> >> PHC15 Introduction to Wireless Networking<br /><h1>P110 SSL</h1>
+<p>Secure sockets layer (SSL) is a cryptographic protocol designed to secure network communications at the application layer. Netscape developed the original protocol in 1995 and SSL became deprecated and was replaced by transport layer security (TLS) in 2015. For more information about SSL, visit this website.</p>
+<p>The most common place to see TLS/SSL in action is in your web browser. For example, most all web sites now default from http (port 80) to https (port 443) with TLS. It is a client-server model where the client initiates the request to connect and the server offers the secure protocol.</p>
+<p>安全套接字層（SSL）是一種加密協議，旨在保護應用程序層的網絡通信安全。 Netscape在1995年開發了原始協議，並且不贊成使用SSL，並在2015年由傳輸層安全性（TLS）代替。有關SSL的更多信息，請訪問此網站。</p>
+<p>實際使用TLS / SSL的最常見地方是您的Web瀏覽器。 例如，大多數網站現在默認使用TLS從http（端口80）更改為https（端口443）。 這是一種客戶端-服務器模型，其中客戶端發起連接請求，服務器提供安全協議。</p>
+<p>example </p>
+<p><span>Try this:</span></p>
+<ul>
+<li>Type: http://facebook.com or http://google.com into the browser of your choice. Notice the new URL changed to https.</li>
+</ul>
+<p>         在您選擇的瀏覽器中輸入：http://facebook.com或http://google.com。 請注意，新的URL更           改為https。</p>
+<ul>
+<li>Next, click on the padlock → connection. If you have an antivirus plug-in you might see the company’s certificate instead in browsers such as Internet Explorer.</li>
+</ul>
+<p>         接下來，單擊掛鎖→連接。 如果您具有防病毒插件，則可能會在Internet Explorer之類的瀏覽器           中看到該公司的證書。</p>
+<p><img alt="" height="481" src="./../images/image11.png" width="438"/></p>
+<br />P109 FTP << <a href='P109 FTP.html'>Previous</a> <a href='PHC15 Introduction to Wireless Networking.html'>Next</a> >> PHC15 Introduction to Wireless Networking</div>
         
     <!-- footer -->
       <div class="container">

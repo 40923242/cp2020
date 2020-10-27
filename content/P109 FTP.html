@@ -1,0 +1,258 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923242 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923242 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='About.html'>About</a><li><a href='作業進度.html'>作業進度</a><li class='has-children'><a href='W1作業.html'>W1作業</a><ul class='dropdown'><li class='has-children'><a href='PCH 14 TCP and UDP Protocols.html'>PCH 14 TCP and UDP Protocols</a><ul class='dropdown'><li><a href='P105 Overview.html'>P105 Overview</a><li><a href='P106 TCP and UDP.html'>P106 TCP and UDP</a><li><a href='P107 TCP IP Stack.html'>P107 TCP IP Stack</a><li><a href='P108 Networking Transfer Protocols.html'>P108 Networking Transfer Protocols</a><li><a href='P109 FTP.html'>P109 FTP</a><li><a href='P110 SSL.html'>P110 SSL</a></li></ul><li class='has-children'><a href='PHC15 Introduction to Wireless Networking.html'>PHC15 Introduction to Wireless Networking</a><ul class='dropdown'><li><a href='P112Wireless LANs.html'>P112Wireless LANs</a><li><a href='P113 Wireless Devices.html'>P113 Wireless Devices</a></li></ul><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='TEST.html'>TEST</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">P108 Networking Transfer Protocols << <a href='P108 Networking Transfer Protocols.html'>Previous</a> <a href='P110 SSL.html'>Next</a> >> P110 SSL<br /><h1>P109 FTP</h1>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">In the OSI (Open Systems Interconnection) model, the application layer uses protocols such as trivial file transfer protocol (TFTP), file transfer protocol (FTP), and file transfer protocol secure (FTPS using TLS/SSL) to allow users to migrate data in a client-server model. FTP concerns itself with data only and as such eliminates the overhead of extraneous information such as what HTTP allows in addition to the actual data (advertisements, banners, images, etc.). This alleviates processing and bandwidth overhead and allows the client to simply retrieve the data from the server.<br/><br/>FTP services can be accessed using client software such as ftp.exe (provided in all Microsoft operating systems), third-party software such as Filezilla or WinSCP, and any modern/current browser. Most light-duty users outside a corporate environment will not use a client FTP (or its secure version) because web browsers can negotiate FTP as well as HTTP. Public FTP servers allow for an anonymous user name so the client can reach file directories specifically designed for public access.<br/><br/>These network communications are passed through the presentation layer to the session layer, where sockets and sessions are created using logical port numbers as defined by TCP or UDP. TCP is stateful, connection-oriented and reliable. UDP is stateless, connectionless, and less reliable. The combination of source and destination address coupled with the logical port number creates a network socket, which establishes the session for process-to-process communication. The material in this section is used under CC-BY license from<a href="https://en.wikipedia.org/wiki/Transport_layer" id="_i_0" lang="" target="_blank">https://en.wikipedia.org/wiki/Transport_layer</a><span>.</span></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span>在OSI（開放系統互連）模型中，應用程序層使用諸如簡單文件傳輸協議（TFTP），文件傳輸協議（FTP）和安全文件傳輸協議（使用TLS / SSL的FTPS）之類的協議來允許用戶遷移數據在客戶端-服務器模型中。 FTP僅關注數據本身，因此消除了額外信息的開銷，例如除了實際數據（廣告，橫幅，圖像等）外，HTTP允許的信息。這減輕了處理和帶寬開銷，並使客戶端可以簡單地從服務器檢索數據。<br/><br/>可以使用客戶端軟件（例如ftp.exe（在所有Microsoft操作系統中提供），第三方軟件（例如Filezilla或WinSCP）以及任何現代/最新的瀏覽器）訪問FTP服務。公司環境之外的大多數輕型用戶將不會使用客戶端FTP（或其安全版本），因為Web瀏覽器可以協商FTP以及HTTP。公用FTP服務器允許使用匿名用戶名，以便客戶端可以訪問專門為公用訪問而設計的文件目錄。<br/><br/>這些網絡通信通過表示層傳遞到會話層，在會話層中，使用由TCP或UDP定義的邏輯端口號創建套接字和會話。 TCP是有狀態的，面向連接的且可靠的。 UDP是無狀態，無連接且可靠性較低的。源地址和目標地址以及邏輯端口號的組合創建了一個網絡套接字，該網絡套接字建立了進程間通信的會話。本節中的材料根據CC-BY許可使用<a href="https://en.wikipedia.org/wiki/Transport_layer" id="_i_0" lang="" target="_blank">https://en.wikipedia.org/wiki/Transport_layer</a><span>.</span></span></span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">Active vs. Passive</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">Active FTP is a point-to-point connection that the client initiates and connects to the FTP server port 21 for commands and port 20 for data. That means that the server will actively initiate the connections back to the client’s listening port and will require the client to allow these connections, which the firewall blocks by default. Passive FTP allows the client to initiate the data connection on port 21, and then the FTP server moves the command and data connections to random ports on the server (with numbers higher than 1023). By initiating the connection from the client side, the burden of allowing a pass-through on the firewall resides with the FTP server administrator, who is better equipped to set a range of ports allowing connectivity.</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">活動FTP是客戶端發起的點對點連接，並連接到FTP服務器的21號端口（用於命令）和20號端口（用於數據）。 這意味著服務器將主動發起與客戶端偵聽端口的連接，並要求客戶端允許這些連接，防火牆默認情況下會阻止這些連接。 被動FTP允許客戶端在端口21上啟動數據連接，然後FTP服務器將命令和數據連接移至服務器上的隨機端口（數字大於1023）。 通過從客戶端啟動連接，防火牆上允許通過的負擔就由FTP服務器管理員承擔，後者可以更好地設置允許連接的端口範圍。</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">For more information on active vs. passive FTP, visit this<a href="http://slacksite.com/other/ftp.html" id="_i_1" lang="" target="_blank">website</a><span>.</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">有關主動與被動FTP的更多信息，請訪問此<a href="http://slacksite.com/other/ftp.html" id="_i_1" lang="" target="_blank">website</a><span>.</span></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">Using FTP</div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">Accessing FTP public servers using the command line is not nearly as user-friendly as using a web browser. However, both methods are viable and in use in corporate networks.<br/><span>使用命令行訪問FTP公共服務器並不像使用Web瀏覽器那樣友好。 但是，這兩種方法都是可行的，並已在公司網絡中使用。</span><br/>
+<ul lang="">
+<li lang="">Open a web browser of choice(<span>打開選擇的網絡瀏覽器</span>)</li>
+<li lang="">Use this URL: ftp.funet.fi(<span>使用此URL：ftp.funet.fi</span>)</li>
+<li lang="">Click “pubs,” then “standards,” then “RFC”(<span>點擊“發布”，然後點擊“標準”，然後點擊“ RFC”</span>)</li>
+<li lang="">Search RFC 959 and access either the .txt or .pdf file (left-click)(<span>搜索RFC 959並訪問.txt或.pdf文件（單擊鼠標左鍵）</span>)</li>
+<li lang="">Search RFC 4217 and access either the .txt or .pdf file (left-click)(<span>搜索RFC 4217並訪問.txt或.pdf文件（單擊鼠標左鍵）</span>)</li>
+<li lang="">If you actually needed the file you can right-click and save as.(<span>如果您確實需要該文件，則可以右鍵單擊並另存為。</span>)</li>
+</ul>
+</div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">Now that you see the file structure, notice it is similar to navigating a local hard drive with the only difference being that you use the “/” (forward slash) instead of the “\” (backslash) because you are accessing the folders through the Internet.<br/><br/>Note: In this next step using the command-line interface, you will only be able to navigate the FTP server, and will not be able to transfer files, because ftp.exe does not support passive mode by default. You can use a command-line tool in a Linux Distro; or, in Windows, you can go to Passive-FTP.com and download the freeware.<br/><br/>However, you can create a workaround by first allowing FTP through your firewall (be sure to put firewall restrictions back in place after the exercise), and then issuing the following commands after you enter the password:</div>
+<div class="result-shield-container tlid-copy-target" tabindex="0"></div>
+<div class="result-shield-container tlid-copy-target" tabindex="0">現在您已經看到文件結構，請注意，它類似於瀏覽本地硬盤驅動器，唯一的區別是您使用“ /”（正斜杠）而不是“ \”（反斜杠），因為您通過以下方式訪問文件夾 互聯網。<br/><br/>注意：在接下來的使用命令行界面的步驟中，您將只能瀏覽FTP服務器，並且將無法傳輸文件，因為ftp.exe默認情況下不支持被動模式。 您可以在Linux Distro中使用命令行工具。 或者，在Windows中，您可以轉到Passive-FTP.com並下載免費軟件。<br/><br/>但是，您可以通過以下方法來創建變通辦法：首先允許FTP通過防火牆（請確保在練習後將防火牆限制放回原處），然後在輸入密碼後發出以下命令</div>
+<ul>
+<li><span>quote pasv</span></li>
+</ul>
+<p><img alt="" height="51" src="./../images/image5.png" width="482"/></p>
+<ul>
+<li>Now the “dir, ls” (list directory contents), and “get” (download) commands will work.</li>
+</ul>
+<p>         現在，“ dir，ls”（列出目錄內容）和“ get”（下載）命令將起作用。</p>
+<ul>
+<li>By default, the file will download to your user root at C:\Windows\Users\**your user name** or at the root of C:\ (wherever your OS is installed).</li>
+</ul>
+<p>         默認情況下，該文件將下載到您的用戶根目錄，即C：\ Windows \ Users \ **您的用戶名**或             C：\的根目錄（無論您安裝了OS的位置）。</p>
+<p>As a public FTP server set to passive mode, certain commands do not work and invoke the server to close the socket. If that happens, re-do your log on.</p>
+<p>Use the keyboard command + r and type ftp (from an administrative command line interface you can also type ftp). The prompt changes to ftp&gt;</p>
+<p>將公共FTP服務器設置為被動模式後，某些命令將不起作用，並調用服務器以關閉套接字。 如果發生這種情況，請重新登錄。</p>
+<p>使用鍵盤命令+ r並鍵入ftp（在管理命令行界面中，您也可以鍵入ftp）。 提示符更改為ftp&gt;</p>
+<p><img alt="" height="157" src="./../images/image7.png" width="510"/></p>
+<ul lang="">
+<li lang="">Type “help” and look at the commands.(輸入“ help”並查看命令。)</li>
+<li lang="">Type at the command prompt: open ftp.funet.fi.(在命令提示符下鍵入：打開ftp.funet.fi。)</li>
+<li lang="">Follow the prompts to log on.(按照提示進行登錄。)</li>
+<li lang="">Username: anonymous.(用戶名：匿名。)</li>
+<li lang="">Password: any generic e-mail (such as user@user.com).(密碼：任何通用電子郵件（例如user@user.com）。)</li>
+</ul>
+<p>You get a welcome message and can now navigate through the directory structure you saw in the browser by typing the following commands:</p>
+<p>您會收到一條歡迎消息，現在可以通過鍵入以下命令來瀏覽瀏覽器中看到的目錄結構：</p>
+<ul>
+<li><span>pwd — lists the current directory.(pwd-列出當前目錄。)</span></li>
+</ul>
+<p><span><img alt="" height="57" src="./../images/image8.png" width="345"/></span></p>
+<ul>
+<li><span>cd — changes the directory. This may be in the form of:</span></li>
+</ul>
+<p><span>         cd —更改目錄。 可以採用以下形式：</span></p>
+<p><span>           cd pub (refer to the URL path from the previous exercise), or<br/>           cd/pub/standards/RFC/</span></p>
+</div>
+</div>
+</div>
+</div>
+<p class="result tlid-copy-target"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">           cd pub（請參閱上一練習中的URL路徑），或</span><br/><span class="" title="">           cd / pub / standards / RFC /</span></span><span class="tlid-translation translation" lang="zh-TW"><span class="" title=""><img alt="" height="77" src="./../images/image9.png" width="370"/></span></span>Now if you are using the workaround, Mac, or Linux you can download a file using the “get” command:現在，如果您使用的是變通方法，Mac或Linux，則可以使用“ get”命令下載文件：<img alt="" height="109" src="./../images/image10.png" width="533"/>Without the passive mode workaround, a third-party FTP client, Mac, or Linux this is as far as you can go. However, in the corporate environment you might be required to troubleshoot FTP on the local intranet, which would most likely be set to active FTP. Clearly, the need for command-line FTP service is fairly limited compared to using a browser.如果沒有被動模式解決方法，則只能使用第三方FTP客戶端，Mac或Linux。 但是，在公司環境中，可能需要對本地Intranet上的FTP進行故障排除，這很可能會設置為活動FTP。 顯然，與使用瀏覽器相比，命令行FTP服務的需求非常有限。</p>
+<br />P108 Networking Transfer Protocols << <a href='P108 Networking Transfer Protocols.html'>Previous</a> <a href='P110 SSL.html'>Next</a> >> P110 SSL</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
