@@ -1,0 +1,245 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923242 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923242 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='首頁.html'>首頁</a><li><a href='作業進度.html'>作業進度</a><li class='has-children'><a href='W1作業.html'>W1作業</a><ul class='dropdown'><li class='has-children'><a href='PCH 14 TCP and UDP Protocols.html'>PCH 14 TCP and UDP Protocols</a><ul class='dropdown'><li><a href='P105 Overview.html'>P105 Overview</a><li><a href='P106 TCP and UDP.html'>P106 TCP and UDP</a><li><a href='P107 TCP IP Stack.html'>P107 TCP IP Stack</a><li><a href='P108 Networking Transfer Protocols.html'>P108 Networking Transfer Protocols</a><li><a href='P109 FTP.html'>P109 FTP</a><li><a href='P110 SSL.html'>P110 SSL</a></li></ul><li class='has-children'><a href='PHC15 Introduction to Wireless Networking.html'>PHC15 Introduction to Wireless Networking</a><ul class='dropdown'><li><a href='P112Wireless LANs.html'>P112Wireless LANs</a><li><a href='P113 Wireless Devices.html'>P113 Wireless Devices</a><li><a href='P114 Wireless Standards.html'>P114 Wireless Standards</a><li><a href='P115 Privacy and Security.html'>P115 Privacy and Security</a><li><a href='P116 Wireless Networking Types.html'>P116 Wireless Networking Types</a></li></ul><li class='has-children'><a href='PCH 16  Internet Connectivity.html'>PCH 16  Internet Connectivity</a><ul class='dropdown'><li><a href='P118 Internet Connectivity.html'>P118 Internet Connectivity</a><li><a href='P119 Networking  Internet Connectivity.html'>P119 Networking  Internet Connectivity</a><li><a href='P120 Setting up a Network.html'>P120 Setting up a Network</a></li></ul><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='TEST.html'>TEST</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">P113 Wireless Devices << <a href='P113 Wireless Devices.html'>Previous</a> <a href='P115 Privacy and Security.html'>Next</a> >> P115 Privacy and Security<br /><h1>P114 Wireless Standards</h1>
+<p><span></span></p>
+<p><span>Background and History</span></p>
+<p><span></span></p>
+<p><span>Wireless (Wi-Fi) networking speeds, the technology behind broadcast streams, and wireless security have greatly improved user connectivity, which in turn has increased the use of multi-purpose devices such as smartphones and tablets in corporate and SOHO networks. The freedom of Wi-Fi has become the infrastructure of choice and essentially relegated wired networks more to moving mass data traffic and less user traffic. Although it will not eliminate the wired infrastructure, because Wi-Fi access points need to connect to a wired device using the Ethernet standard, Wi-Fi allows greater expandability and access for IT departments in both corporate and SOHO environments.<br/></span></p>
+<p><span>無線（Wi-Fi）網絡速度，廣播流背後的技術以及無線安全性極大地改善了用戶連接性，進而增加了企業和SOHO網絡中諸如智能手機和平板電腦等多功能設備的使用。 Wi-Fi的自由度已成為首選的基礎架構，從本質上講，降低了有線網絡的傳輸效率，使之可以移動海量數據流量而減少用戶流量。 儘管不會消除有線基礎架構，但由於Wi-Fi接入點需要使用以太網標準連接到有線設備，因此Wi-Fi允許企業和SOHO環境中的IT部門具有更大的可擴展性和訪問權限。</span></p>
+<p><span>At the time when Wi-Fi became viable for implementation, the wired standard available in most corporate and SOHO networks operated at 100 Mbps. The Institute of Electrical and Electronics Engineers (IEEE) Standards Committee creates and maintains media access control (MAC) and physical layer (PHY) specifications for implementing WLAN computer communication. The IEEE 802.11 standard is overarching guidance that has been provided for the large number of wireless standards. The IEEE Wi-Fi standard is 802.11 with a small letter designation referring to the next revision (e.g., 802.11n, 802.11ac, 802.11ad, etc.). Each standard (like 802.11a, 802.11b, 802.11g, or 802.11n) is differentiated by the frequency range or frequency band that it utilizes.</span></p>
+<p><span>Wi-Fi成為可行的實現之時，大多數公司和SOHO網絡中可用的有線標準以100 Mbps的速度運行。 電氣和電子工程師協會（IEEE）標準委員會創建並維護用於實現WLAN計算機通信的媒體訪問控制（MAC）和物理層（PHY）規範。 IEEE 802.11標準是為大量無線標準提供的總體指導。 IEEE Wi-Fi標準是802.11，帶有小寫字母，表示下一個修訂版本（例如802.11n，802.11ac，802.11ad等）。 每個標準（如802.11a，802.11b，802.11g或802.11n）都根據其使用的頻率範圍或頻帶進行區分。</span></p>
+<p><span>The 802.11 standard was initially ratified in 1997 and devices compliant with the 802.11a and 802.11b revisions became commercially available soon after in 2000. Despite higher throughput, 802.11a devices were not as readily adopted as 802.11b devices. At the time Wi-Fi became viable to deploy 802.11b at a maximum throughput of 11 Mbps, wired networks were at a minimum of 100 Mbps in most corporate and SOHO environments. The slower throughput kept users more reliant on traditional desktop machines and less likely to use their new wireless-capable laptops wirelessly. Once 802.11g was sufficiently saturated in the market, the disparity between its 54 Mbps speed and the 100 Mbps speed of wired networks became less noticeable and consumers became more interested in being wireless. The industry continued to push for ways to design higher throughput devices and incorporate the hardware into mobile devices such as cell phones, tablets, and lighter-weight laptops.</span></p>
+<p><span>802.11標準最初是在1997年批准的，並且與802.11a和802.11b修訂版兼容的設備在2000年之後很快就可以商業化使用。儘管吞吐量更高，但802.11a設備卻不如802.11b設備那麼容易採用。 當Wi-Fi能夠以11 Mbps的最大吞吐量部署802.11b時，在大多數公司和SOHO環境中，有線網絡的最低速度為100 Mbps。 較低的吞吐量使用戶更依賴於傳統台式機，並且不太可能無線使用其具有無線功能的新型筆記本電腦。 一旦802.11g在市場上充分飽和，其54 Mbps速度與100 Mbps有線網絡速度之間的差異就變得不那麼明顯了，消費者對無線變得越來越感興趣。 業界一直在尋求方法來設計更高吞吐量的設備，並將硬件整合到移動設備中，例如手機，平板電腦和更輕便的筆記本電腦。</span></p>
+<p><span>Wireless LANs use two primary frequency bands: 2.4 GHz and 5 GHz. The 2.4 GHz range actually encompasses 2.4 to 2.5 GHz frequencies, while the 5 GHz range is 5.75 GHz to 5.875 GHz. Each frequency band has specific channels (or small portions of frequency) at which the devices operate to avoid overlapping with other wireless LAN devices. For 2.4 GHz frequency bands, it is important to choose channels 1, 6, and 11 to avoid overlapping frequencies. This is because overlapping can cause interference in your networks and cause data transmission and receiving issues for the devices.</span></p>
+<p><span>無線局域網使用兩個主要頻段：2.4 GHz和5 GHz。 2.4 GHz範圍實際上包含2.4至2.5 GHz頻率，而5 GHz範圍是5.75 GHz至5.875 GHz。 每個頻帶具有設備在其上操作的特定信道（或頻率的一小部分），以避免與其他無線LAN設備重疊。 對於2.4 GHz頻帶，重要的是選擇信道1、6和11，以避免頻率重疊。 這是因為重疊會導致網絡干擾，並導致設備的數據傳輸和接收問題。</span></p>
+<p><span></span></p>
+<p><span>Speed, Range, and Frequencies</span></p>
+<p><span></span></p>
+<p><span>Bandwidth speed has been greatly improved through the revisions after 802.11b, as shown in the table below. When discussing data flow and speed, the two terms referred to are bandwidth and throughput. Though they are often used interchangeably, the two terms are different and need to be understood. Simply put, bandwidth is the theoretical maximum of the given standard, whereas throughput is the actual potential in a real-world scenario. Many factors affect actual throughput, such as frequency, channel overlap, and broadcast streams.</span></p>
+<p><span>如下表所示，通過802.11b的修訂，帶寬速度得到了極大的提高。 在討論數據流和速度時，所指的兩個術語是帶寬和吞吐量。 儘管它們經常互換使用，但這兩個術語是不同的，需要理解。 簡而言之，帶寬是給定標準的理論最大值，而吞吐量是實際情況下的實際潛力。 許多因素都會影響實際的吞吐量，例如頻率，頻道重疊和廣播流。</span></p>
+<table align="center" cellspacing="0" class="wbtable" lang="">
+<tbody>
+<tr class="e">
+<td align="center" lang=""><em class="italic" lang=""><em class="bold" lang="">Revision</em></em></td>
+<td align="center" lang=""><em class="italic" lang=""><em class="bold" lang="">(Max) Bandwidth</em></em></td>
+<td align="center" lang=""><em class="italic" lang=""><em class="bold" lang="">Frequency</em></em></td>
+</tr>
+<tr>
+<td align="center" lang="">802.11a</td>
+<td align="center" lang="">54 Mbps</td>
+<td align="center" lang="">3.7/5.0</td>
+</tr>
+<tr class="e">
+<td align="center" lang="">802.11b</td>
+<td align="center" lang="">11 Mbps</td>
+<td align="center" lang="">2.4</td>
+</tr>
+<tr>
+<td align="center" lang="">802.11g</td>
+<td align="center" lang="">54 Mbps</td>
+<td align="center" lang="">2.4</td>
+</tr>
+<tr class="e">
+<td align="center" lang="">802.11n</td>
+<td align="center" lang="">300/600 Mbps</td>
+<td align="center" lang="">2.4/5.0</td>
+</tr>
+<tr>
+<td align="center" lang="">802.11ac</td>
+<td align="center" lang="">1700+ Gbps</td>
+<td align="center" lang="">5.0</td>
+</tr>
+</tbody>
+</table>
+<p>The four wireless standards that are important to focus your studies on are 802.11a, 802.11b, 802.11g, and 802.11n. 802.11a operates in the 5 GHz frequency band, has a maximum bandwidth of 54 Mbps, and has a range of up to 35 meters indoors and 120 meters outdoors. 802.11b operates in the 2.4 GHz frequency band, has a maximum bandwidth of 11 Mbps, and has a range of up to 32 meters indoors and 140 meters outdoors. 802.11g operates in the 2.4 GHz frequency band, has a maximum bandwidth of 54 Mbps, and has a range of up to 32 meters indoors and 140 meters outdoors. 802.11n features a dual-band transceiver, operating in both the 2.4 GHz and 5 GHz frequency bands, has a maximum bandwidth of more than 300 Mbps, and has a range of up to 70 meters indoors and 250 meters outdoors.</p>
+<p>專注於研究的四個無線標準是802.11a，802.11b，802.11g和802.11n。 802.11a工作在5 GHz頻段，最大帶寬為54 Mbps，室內的最大距離為35米，室外的最大距離為120米。 802.11b工作在2.4 GHz頻段，最大帶寬為11 Mbps，室內最大範圍為32米，室外最大範圍為140米。 802.11g工作在2.4 GHz頻段，最大帶寬為54 Mbps，室內最大範圍為32米，室外最大範圍為140米。 802.11n具有工作在2.4 GHz和5 GHz頻帶上的雙頻收發器，最大帶寬超過300 Mbps，室內最大範圍為70米，室外最大範圍為250米。</p>
+<p>The 2.4 GHz frequency band is more robust than the 5.0 GHz in that it is less susceptible to interference and has a wider distance range. However, many more devices such as RC toys, cordless telephones, other radio devices such as mice and keyboards, and microwave ovens also operate in the 2.4 GHz frequency, so it is more crowded, which can have a negative impact on throughput. Although the 5.0 GHz frequency band is less crowded, it is more susceptible to obstructions such as building infrastructure (i.e., walls, floors, steel beams, etc.) due to absorption.</p>
+<p>2.4 GHz頻段比5.0 GHz更加健壯，因為它不易受到干擾，並且距離範圍更廣。 但是，更多的設備（例如RC玩具，無繩電話，其他無線電設備（例如，鼠標和鍵盤）和微波爐）也以2.4 GHz頻率運行，因此擁擠不堪，這可能會對吞吐量產生負面影響。 儘管5.0 GHz頻帶的擁擠程度較小，但由於吸收，它更容易受到諸如建築基礎設施（即牆壁，地板，鋼樑等）的障礙物的影響。</p>
+<p>Beginning with the 802.11n standard and subsequently moving to the current 802.11ac standard, manufacturers incorporated multiple antennae to achieve higher throughput. Known as multiple-input multiple-output (MIMO), both revisions accomplish the higher throughput by allowing operation at two different channel widths (20 and 40 MHz) within the same frequency and operate on both 2.4 GHz and 5.0 GHz frequency bands at the same time. Wireless N (802.11n) and wireless AC have a much larger bandwidth and maximum range, because they use MIMO and multiple frequency bands working in tandem to increase transmission and reception.</p>
+<p>從802.11n標准開始，然後發展到當前的802.11ac標準，製造商採用了多個天線來實現更高的吞吐量。 這兩種版本都稱為多輸入多輸出（MIMO），通過允許在同一頻率內在兩個不同的信道寬度（20和40 MHz）下運行，並在2.4 GHz和5.0 GHz頻段上同時運行，從而實現了更高的吞吐量。 時間。 無線N（802.11n）和無線AC具有更大的帶寬和最大範圍，因為它們使用MIMO和多個頻段協同工作以增加傳輸和接收。</p>
+<p>An important note is that wireless N, G, and B are all compatible because they all support the 2.4 GHz frequency, allowing for backward compatibility. If you use multiple standards, like B, G, and N devices at the same time on a singular wireless N wireless access point, the WAP will default back to wireless B standards to support each device, which will significantly slow down the network. Wireless N and wireless A are compatible because they both use the 5 GHz frequency band. However, wireless A is not compatible with wireless B or G devices.</p>
+<p>重要說明是，無線N，G和B都兼容，因為它們都支持2.4 GHz頻率，因此可以向後兼容。 如果您在單個無線N無線接入點上同時使用多個標準，例如B，G和N設備，則WAP將默認恢復為無線B標準以支持每個設備，這將大大降低網絡速度。 無線N和無線A兼容，因為它們都使用5 GHz頻帶。 但是，無線A與無線B或G設備不兼容。</p>
+<br />P113 Wireless Devices << <a href='P113 Wireless Devices.html'>Previous</a> <a href='P115 Privacy and Security.html'>Next</a> >> P115 Privacy and Security</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        

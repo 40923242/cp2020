@@ -1,0 +1,232 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>CMSiMDE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>40923242 cp2020</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40923242 cp2020</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='首頁.html'>首頁</a><li><a href='作業進度.html'>作業進度</a><li class='has-children'><a href='W1作業.html'>W1作業</a><ul class='dropdown'><li class='has-children'><a href='PCH 14 TCP and UDP Protocols.html'>PCH 14 TCP and UDP Protocols</a><ul class='dropdown'><li><a href='P105 Overview.html'>P105 Overview</a><li><a href='P106 TCP and UDP.html'>P106 TCP and UDP</a><li><a href='P107 TCP IP Stack.html'>P107 TCP IP Stack</a><li><a href='P108 Networking Transfer Protocols.html'>P108 Networking Transfer Protocols</a><li><a href='P109 FTP.html'>P109 FTP</a><li><a href='P110 SSL.html'>P110 SSL</a></li></ul><li class='has-children'><a href='PHC15 Introduction to Wireless Networking.html'>PHC15 Introduction to Wireless Networking</a><ul class='dropdown'><li><a href='P112Wireless LANs.html'>P112Wireless LANs</a><li><a href='P113 Wireless Devices.html'>P113 Wireless Devices</a><li><a href='P114 Wireless Standards.html'>P114 Wireless Standards</a><li><a href='P115 Privacy and Security.html'>P115 Privacy and Security</a><li><a href='P116 Wireless Networking Types.html'>P116 Wireless Networking Types</a></li></ul><li class='has-children'><a href='PCH 16  Internet Connectivity.html'>PCH 16  Internet Connectivity</a><ul class='dropdown'><li><a href='P118 Internet Connectivity.html'>P118 Internet Connectivity</a><li><a href='P119 Networking  Internet Connectivity.html'>P119 Networking  Internet Connectivity</a><li><a href='P120 Setting up a Network.html'>P120 Setting up a Network</a></li></ul><li class='has-children'><a href='Develop.html'>Develop</a><ul class='dropdown'><li><a href='TEST.html'>TEST</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">P118 Internet Connectivity << <a href='P118 Internet Connectivity.html'>Previous</a> <a href='P120 Setting up a Network.html'>Next</a> >> P120 Setting up a Network<br /><h1>P119 Networking  Internet Connectivity</h1>
+<p>The oldest method of Internet connectivity is the dial-up network, usually abbreviated as DUN. Dial-up networking uses the public telephone lines using an analog audible signal over the line, which provides a maximum speed of 56 Kbps. The public switched telephone network (PSTN) is made up of multiple telephone carriers from around the world. Analog connections (voice and data) using the PSTN are called plain old telephone service (POTS) connections. To connect to the Internet using POTS, you needed both a modem and a dial-up Internet service provider (ISP) to answer your dial-up call.</p>
+<p>最早的Internet連接方法是撥號網絡，通常縮寫為DUN。 撥號網絡使用公用電話線，該公用電話線在線路上使用模擬聲音信號，最大速度為56 Kbps。 公共交換電話網（PSTN）由來自世界各地的多個電話運營商組成。 使用PSTN的模擬連接（語音和數據）稱為普通舊電話服務（POTS）連接。 要使用POTS連接到Internet，您需要調製解調器和撥號Internet服務提供商（ISP）來應答您的撥號電話。</p>
+<p>A modem is a device that converts 1s and 0s from their digital state into an audible state that is transferred over a standard telephone line. Modem stands for modulate/demodulate, which is the process of the digital data being converted to/from analog for transmission. Modems can reside in or be connected to computers in multiple ways, including:</p>
+<p>調製解調器是一種將1和0從其數字狀態轉換為可聽狀態的設備，該狀態可通過標準電話線傳輸。 調製解調器代表調製/解調，這是將數字數據轉換為模擬數據或從模擬數據轉換為傳輸數據的過程。 調製解調器可以多種方式駐留在計算機中或連接到計算機，包括：</p>
+<ul lang="">
+<li lang="">Add-on card (like PCI or PCIe)(附加卡（如PCI或PCIe）)</li>
+<li lang="">Externally connected by USB and/or serial(通過USB和/或串行外部連接)</li>
+<li lang="">PC card (for laptops)(PC卡（用於筆記本電腦）)</li>
+<li lang="">Integrated in the motherboard(集成在主板上)</li>
+<li lang="">Mini-PCI(微型PCI)</li>
+<li lang="">Mini-PCIe card (internal for laptops)(Mini-PCIe卡（筆記本電腦內部）)</li>
+</ul>
+<p>While dial-up modems were extremely popular at the dawn of the Internet in the 1980s and 1990s, the bandwidth limitation of 56 Kbps quickly become an issue as faster alternatives were sought. Eventually dial-up modems were replaced, and now they are almost nonexistent.</p>
+<p>儘管撥號調製解調器在1980年代和1990年代互聯網興起之初非常受歡迎，但隨著人們尋求更快的替代方案，56 Kbps的帶寬限制迅速成為一個問題。 最終，撥號調製解調器被替換了，現在它們幾乎不存在了。</p>
+<p><img alt="" height="304" src="./../images/image21.png" width="405"/></p>
+<p>Integrated services digital network (ISDN) is slightly faster than basic dial-up. ISDN supports multiple 64 Kbps channels over a single connection. These 64-Kbps channels are called bearer channels (B channels). ISDN provides faster speeds than dial-up, usually at 128 Kbps, and also provides an “always on” connection, instead of “on demand” (like dial-up service). ISDN was a popular alternative to DUN in the 1980s for government, corporate, and educational networks, but was too cost prohibitive for the consumer market. ISDN was one of the first “high-speed” options available to carry voice, video, or data. ISDN requires an ISDN terminal adapter, which can be internal or external and acts like a “modem” for the ISDN circuit. It takes two or more RJ-11 phone lines and binds them together to provide the desired data rate. The primary rate interface (PRI) has a maximum speed of 1.536 Mbps, but the most common ISDN service is basic rate interface, which provides either 64 Kbps (single) or 128 Kbps (double) rate service. While this is an older technology, ISDN is still entrenched in some of the larger government and educational networks because it is cost prohibitive to remove it entirely. Most entities have moved to broadband solutions such as voice over IP (VoIP) using session initiation protocol (SIP) trunks. In the next session, we will discuss the next generation of broadband data solutions. Currently, Internet protocol video teleconference (IPVT) has become more widespread and cost efficient.</p>
+<p>集成服務數字網絡（ISDN）的速度比基本撥號更快。 ISDN通過單個連接支持多個64 Kbps通道。這些64 Kbps通道稱為承載通道（B通道）。 ISDN通常以128 Kbps的速度提供比撥號更快的速度，並且還提供“始終在線”連接，而不是“按需”連接（例如撥號服務）。對於政府，企業和教育網絡，ISDN在1980年代是DUN的一種流行替代方法，但是對於消費者市場而言，成本太高了。 ISDN是最早可用於傳輸語音，視頻或數據的“高速”選項之一。 ISDN需要ISDN終端適配器，該適配器可以是內部或外部的，並且充當ISDN電路的“調製解調器”。它需要兩條或多條RJ-11電話線並將它們綁在一起以提供所需的數據速率。主速率接口（PRI）的最大速度為1.536 Mbps，但是最常見的ISDN服務是基本速率接口，它提供64 Kbps（單速率）或128 Kbps（雙速率）服務。儘管這是一種較舊的技術，但ISDN在某些較大的政府和教育網絡中仍然根深蒂固，因為完全刪除它的成本高昂。大多數實體已轉向使用會話發起協議（SIP）中繼的IP語音（VoIP）等寬帶解決方案。在下屆會議上，我們將討論下一代寬帶數據解決方案。當前，互聯網協議視頻電話會議（IPVT）已經變得更加普及和具有成本效益。</p>
+<p><img alt="" height="304" src="./../images/image22.png" width="405"/></p>
+<p>One of the first consumer replacements for dial-up service was the digital subscriber line (DSL). DSL solved the 56.6 Kbps limitation of DUN and effectively began the consumer broadband demand for greater Internet speeds. DSL utilizes the existing POTS network that already exists at homes and offices and allows the digital signal to piggyback on the normal analog phone line. DSL is referred to as xDSL with two main varieties: asymmetric DSL (ADSL) and symmetric DSL (SDSL). Other variants of xDSL include high-bit-rate DSL (HDSL); symmetric high-speed DSL (SHDSL), which is a form of symmetric DSL; and very-high-bit-rate DSL second-generation (VDSL2), a form of ADSL using combined fiber optics with copper to achieve greater speeds. ADSL provides high-speed Internet with a faster download speed than its upload speed. Download speeds are between 384 Kbps and 24 Mbps, but uploads are only 128 Kbps to 3.3 Mbps. It was marketed to home users and small businesses, who utilize the Internet primarily as a consumption network, downloading much more information than they upload. For example, if you go to a streaming video site and request a video, your request may only be a few hundred kilobytes. But, the video you receive back (download) is several hundred megabytes. This is the typical web surfing pattern of most users, so ADSL worked well for the majority of people.</p>
+<p>撥號服務的第一個消費者替代產品是數字用戶線（DSL）。 DSL解決了DUN的56.6 Kbps限制，並有效地開始了消費者寬帶對更高互聯網速度的需求。 DSL利用家庭和辦公室中已經存在的現有POTS網絡，並允許數字信號搭載在普通的模擬電話線上。 DSL被稱為xDSL，主要有兩種：非對稱DSL（ADSL）和對稱DSL（SDSL）。 xDSL的其他變體包括高比特率DSL（HDSL）；對稱高速DSL（SHDSL），是對稱DSL的一種形式；第二種是非常高比特率的DSL（VDSL2），它是一種結合了銅纜和光纖以達到更高速度的ADSL。 ADSL為高速Internet提供比其上載速度更快的下載速度。下載速度介於384 Kbps和24 Mbps之間，而上傳速度僅為128 Kbps至3.3 Mbps。它面向的是家庭用戶和小型企業，他們主要將互聯網用作消費網絡，下載的信息比上傳的信息多得多。例如，如果您訪問流媒體視頻站點並請求視頻，則您的請求可能只有幾百千字節。但是，您收到的視頻（下載）為數百兆字節。這是大多數用戶的典型網絡衝浪模式，因此ADSL對於大多數人來說效果很好。</p>
+<p>SDSL, on the other hand, matches the download and upload speeds. Since more bandwidth is dedicated to the upload side, speed is lost on the download side. Speed ranges from 384 Kbps to 2 Mbps for both upload and download. This was used heavily in commercial scenarios, where clients need higher upload speeds due to their business models. The biggest disadvantage of xDSL is that it is distance-dependent from the telephone company switching station or central office (CO) — the further from the CO, the greater the attenuation (signal loss) and thus the slower the speed. However, telephone companies (sometimes referred to as telco) are adding DSL loop extenders and combining fiber optics with xDSL to overcome this limitation.</p>
+<p>另一方面，SDSL與下載和上傳速度匹配。 由於更多的帶寬專用於上傳側，因此下載側的速度損失了。 上傳和下載的速度範圍從384 Kbps到2 Mbps。 這在商業場景中被大量使用，在商業場景中，客戶由於其業務模型而需要更高的上載速度。 xDSL的最大缺點是，它與電話公司的交換台或中心局（CO）之間的距離取決於-與CO的距離越遠，衰減（信號損耗）越大，因此速度越慢。 但是，電話公司（有時稱為telco）正在添加DSL環路擴展器，並將光纖與xDSL組合在一起以克服此限制。</p>
+<p>Cable, the second broadband solution for Internet connectivity, developed concurrently with DSL throughout the 1990s. Cable providers, like the telephone companies, had an immense infrastructure of wiring available as the broadband market grew. Remember that early LANs used coaxial cable prior to Ethernet, and the outgrowth to Internet connectivity using this infrastructure was natural. Cable television infrastructure contains both coaxial and fiber-optic cabling, which is called a hybrid fiber-coax (HFC) distribution network. Cable Internet provides homes and businesses with Internet service delivered over the existing coaxial cables in their area at a reasonable rate. Speeds ranging from 15/2 Mbps (download/upload speed) to 60/6 Mbps are now common with cable service, with some companies also adding fiber to their infrastructure, allowing them to achieve speeds greater than 100 Mbps downstream. Updated cable modems (DOCSIS 3.0) combined with wireless router specifications (AC3200) play an important role in achieving the package speeds Internet service providers (ISPs) advertise to their customers. Like xDSL, cable broadband has its own unique disadvantages. Specific frequency ranges are used for upstream (uploading) and downstream (downloading) data transmission, and all customers share a single hybrid fiber-coax hub, which means that bandwidth speeds fluctuate throughout the day during peak times when many neighbors are online. Fiber-optic and DSL networks do not suffer from this inconsistent data stream. Further, many companies are beginning to cap data usage and bill customers for over-usage. This can cause low speed during peak usage times, whereas true fiber and DSL networks provide a steady service capability that cable cannot.</p>
+<p>電纜是第二個用於Internet連接的寬帶解決方案，在整個1990年代與DSL同時開發。像電話公司一樣，電纜提供商也隨著寬帶市場的增長而擁有龐大的佈線基礎設施。請記住，早期的LAN先於以太網使用同軸電纜，並且使用此基礎架構向Internet連接的擴展自然而然。有線電視基礎設施同時包含同軸電纜和光纖電纜，這稱為混合光纖同軸（HFC）分配網絡。 Cable Internet為家庭和企業提供合理的速率，通過其所在地區的現有同軸電纜提供Internet服務。電纜服務現在的速度範圍從15/2 Mbps（下載/上傳速度）到60/6 Mbps，一些公司還向其基礎架構中添加了光纖，從而使下行速度達到了100 Mbps以上。更新的電纜調製解調器（DOCSIS 3.0）與無線路由器規範（AC3200）的結合在實現Internet服務提供商（ISP）向其客戶做廣告的打包速度方面起著重要作用。像xDSL一樣，有線寬帶也有其獨特的缺點。特定的頻率範圍用於上行（上載）和下行（下載）數據傳輸，並且所有客戶共享一個混合光纖同軸集線器，這意味著在許多鄰居在線的高峰時段，帶寬速度全天都會波動。光纖和DSL網絡不會受到這種不一致的數據流的影響。此外，許多公司開始限制數據使用量並向客戶收取過度使用費用。這可能會在高峰使用時間內導致低速運行，而真正的光纖和DSL網絡提供了電纜無法提供的穩定服務能力。</p>
+<p><img alt="" height="448" src="./../images/image23.png" width="342"/></p>
+<p>The newest broadband solution providing Internet connectivity to homes and businesses is the fiber-optic network. A great example of this is Fios from Verizon, although Google Fiber is now entering this market, as well. In these networks, the company provides a fiber-optic cable to your residence or office that is terminated in a fiber-optic modem. This utilizes light over a long piece of glass cabling to provide the signal to and from the data centers. Service is exceptionally good, with very high speeds of up to 150 Mbps downloads or more. Upload speeds can also be extremely fast, reaching 35 Mbps or higher.</p>
+<p>提供家庭和企業Internet連接的最新寬帶解決方案是光纖網絡。 一個很好的例子是Verizon的Fios，儘管Google Fiber現在也正在進入這個市場。 在這些網絡中，公司為您的住宅或辦公室提供了一條光纖電纜，並以光纖調製解調器端接。 這利用了較長的玻璃電纜上的光來提供往返數據中心的信號。 服務異常出色，下載速度高達150 Mbps或更高。 上傳速度也可以非常快，達到35 Mbps或更高。</p>
+<p><img alt="" height="224" src="./../images/image24.png" width="398"/></p>
+<p><span>A major disadvantage all the aforementioned broadband solutions share is availability in rural and small towns where the infrastructure does not exist. In spite of the FCC’s </span><a href="https://oli.cmu.edu/repository/webcontent/d826575d0a0001dc3e9f244fa018c560/PCH16/x-oli-workbook_page/broadband.gov" id="_i_8" lang="" target="_blank">Connecting America: The National Broadband Plan</a><span>, developed as directed under the American Recovery and Reinvestment Act of 2009, there are still many areas in the United States and throughout the world that lack Internet access. Therefore, a satellite WAN connection might be an option for those requiring faster Internet service but who lack the infrastructure to receive it from the telephone or cable companies. Satellite Internet can provide fast speeds like a DSL modem, but contains low bandwidth usage limits with high costs for over-the-limit usage. Satellite tends to be an expensive option in comparison to cable and DSL service, but is often the only option in remote areas. There are two potential design problems that should be considered when using satellite service: delay and weather conditions. First, the service provided by satellite has a high delay and lag time compared to more traditional Internet options. This lag time is because the signal has to travel from your satellite dish to the satellite, then to the ground station, and return through the same path. This travel time requires nearly half a second for a roundtrip to occur, because the satellite is in orbit at 22,000 miles above the earth. Second, the weather can affect your service. Just like when you watch satellite television during a thunderstorm or heavy snow, satellite Internet can be disconnected due to heavy weather conditions.</span></p>
+<p><span>所有上述寬帶解決方案共享的主要缺點是在不存在基礎設施的農村和小城鎮中的可用性。儘管FCC的“連通美國：國家寬帶計劃”是根據2009年《美國復甦和再投資法案》制定的，但美國和世界各地仍有許多地區缺乏Internet訪問。因此，對於那些需要更快的Internet服務但又缺乏從電話或電纜公司接收它的基礎設施的人來說，可以使用衛星WAN連接。衛星Internet可以像DSL調製解調器一樣提供更快的速度，但是包含較低的帶寬使用限制以及超限使用的高成本。與電纜和DSL服務相比，衛星往往是昂貴的選擇，但通常是偏遠地區的唯一選擇。使用衛星服務時，應考慮兩個潛在的設計問題：延遲和天氣狀況。首先，與傳統互聯網選項相比，衛星提供的服務具有較高的延遲和延遲時間。該滯後時間是因為信號必須從衛星天線傳播到衛星，然後再傳播到地面站，然後通過同一路徑返回。由於衛星在離地球22,000英里的軌道上運行，因此往返所需的時間將近半秒。其次，天氣會影響您的服務。就像在雷雨或大雪期間觀看衛星電視一樣，由於惡劣的天氣，衛星互聯網可能會斷開連接。</span></p>
+<p><span><img alt="" height="441" src="./../images/image25.png" width="376"/></span></p>
+<p><span>The last broadband solution is Worldwide Interoperability for Microwave Access (WiMAX), which uses microwave towers to provide fixed wireless access connectivity similar to Wi-Fi but with a larger geographical coverage connecting directly to metropolitan area networks (MANs). Following the IEEE 802.16 standard, WiMAX operates on a different radio frequency than Wi-Fi and can be used to connect businesses to a MAN as well as individual subscribers to the Internet through an ISP. Providing up to 70 Mbps, WiMAX can provide coverage to rural areas, like satellite does, but at a lesser cost and with more reliability. Distance is another factor, because within three miles (nearly five kilometers) users can connect using a wireless WiMAX device similar to a Wi-Fi access point, but greater than that distance requires a “line of sight” antenna.</span></p>
+<p><span>最新的寬帶解決方案是全球微波訪問互操作性（WiMAX），它使用微波塔提供類似於Wi-Fi的固定無線訪問連接，但是地理覆蓋範圍更大，可以直接連接到城域網（MAN）。 遵循IEEE 802.16標準，WiMAX的工作頻率與Wi-Fi的無線電頻率不同，可用於將企業連接到MAN以及將單個訂戶通過ISP連接到Internet。 WiMAX可以提供高達70 Mbps的速度，可以像衛星一樣向農村地區提供覆蓋，但是成本更低，可靠性更高。 距離是另一個因素，因為在三英里（近五公里）內，用戶可以使用類似於Wi-Fi接入點的無線WiMAX設備進行連接，但是要超過該距離，則需要使用“視線”天線。</span></p>
+<p>The WiMAX Forum is a consortium comprised of industry leaders dedicated to ensure compatibility and interoperability within the specification. WiMAX is leveraged to serve municipalities and specialized communication structures such as the Aeronautical Mobile Airport Communications System (AeroMACS).</p>
+<p>Another option for Internet connectivity, and by far the newest for mobile Internet connectivity, is cellular networks. In order to access the cellular network, you must use a cellular modem. Cellular modems come in a variety of models, including internal (mini PCIe) cards for laptops, USB external modem sticks, and Wi-Fi devices (like cellphones or MiFi units). Cellular modems operate at speeds up to 4G (100 Mbps) wherever cellular service exists. If 4G is not available, the cellular modems are backward compatible with the older networks such as 3G at 800 Kbps and 2G at 56 Kbps speeds.</p>
+<p>WiMAX論壇是一個由行業領導者組成的聯盟，致力於確保規範內的兼容性和互操作性。 WiMAX被用於為市政當局和專用通信結構（如航空移動機場通信系統（AeroMACS））提供服務。</p>
+<p>蜂窩網絡是Internet連接的另一種選擇，也是迄今為止最新的移動Internet連接。 為了訪問蜂窩網絡，必須使用蜂窩調製解調器。 蜂窩調製解調器有多種型號，包括用於筆記本電腦的內部（微型PCIe）卡，USB外部調製解調器棒和Wi-Fi設備（例如手機或MiFi設備）。 蜂窩調製解調器在任何存在蜂窩服務的地方都可以高達4G（100 Mbps）的速度運行。 如果無法使用4G，則蜂窩調製解調器將與較早的網絡向後兼容，例如800 Kbps的3G和56 Kbps的速度的2G。</p>
+<p>Smartphones can now be turned into wireless hotspots through tethering. With tethering, the phone acts like a cellular modem for a tablet or computer. You can connect devices to the cell phone through Bluetooth, Wi-Fi, or the USB port and then out to the Internet through the cellular network. The only requirement is that the smartphone has Wi-Fi capability.</p>
+<p>Due to the underlying infrastructure, 4G data speed is significantly greater than 3G. Until 2015, the infrastructure was either mobile WiMax or LTE. Mobile WiMAX was adopted by Sprint, Intel, and other industry leaders to be the next generation for cellular carriers. While some mobile carriers invested and developed access through mobile WiMAX, others backed 4G LTE, which progressed from the Global System for Mobile Communications (GSM) standard. Both standards, as with all cellular networking, are incredibly sensitive to distance from carrier towers. As of March 2016, Mobile WiMAX lost the backing of Sprint when they shut down their mobile WiMAX network, and it appears that LTE will be the infrastructure supporting 4G.</p>
+<p>現在，可以通過網絡共享將智能手機變成無線熱點。通過網絡共享，電話就像平板電腦或計算機的蜂窩調製解調器一樣。您可以通過藍牙，Wi-Fi或USB端口將設備連接到手機，然後通過蜂窩網絡連接到Internet。唯一的要求是智能手機必須具有Wi-Fi功能。</p>
+<p>由於具有基礎架構，因此4G數據速度明顯高於3G。直到2015年，基礎設施還是移動WiMax或LTE。移動WiMAX被Sprint，英特爾和其他行業領導者採用，成為蜂窩運營商的下一代產品。一些移動運營商通過移動WiMAX投資並開發了接入服務，而其他移動運營商則支持從全球移動通信系統（GSM）標準發展而來的4G LTE。與所有蜂窩網絡一樣，這兩個標準對與運營商塔樓的距離都非常敏感。截至2016年3月，移動WiMAX在關閉其移動WiMAX網絡時失去了Sprint的支持，並且看來LTE將成為支持4G的基礎架構。</p>
+<p>A standard under development and expected to be released sometime in the early 2020s is 5G. The premise of this standard is that Internet connectivity has become more of a requirement than a luxury. Although the cellular market has moved away from mobile WiMAX, the infrastructure is still available throughout the world for fixed wireless. The Internet of things (IoT) is a phrase used to describe the convergence that is taking place now in the 21st century, when any and all capable devices will be connected to the Internet. From smart homes and their subsystems, to appliances, to automobiles with Wi-Fi and GPS, users will be deriving benefits from broadband technologies and “always on” connectivity. The 5G standard and other major initiatives in the fiber-optic and Wi-Fi industries are promising to move toward that end. Groups such as the WiMAX Forum and many other industry leaders are heavily investing in bringing together device connectivity under the IoT umbrella.</p>
+<p>5G是正在開發中的標準，預計將在2020年代初發布。 該標準的前提是，Internet連接已成為一種需求，而非奢侈。 儘管蜂窩市場已經脫離了移動WiMAX，但該基礎設施仍在全球範圍內用於固定無線。 物聯網（IoT）是一個短語，用於描述21世紀當今正在發生的融合，屆時，任何功能強大的設備都將連接到Internet。 從智能家居及其子系統，到家用電器，再到具有Wi-Fi和GPS的汽車，用戶將從寬帶技術和“始終在線”的連接中受益。 光纖和Wi-Fi行業中的5G標準和其他主要舉措有望朝著這一目標邁進。 WiMAX論壇等組織和許多其他行業領導者正在大力投資，以在IoT框架下整合設備連接性。</p>
+<p><span>As we previously mentioned, both cable and xDSL networks benefit by incorporating fiber into the back end (known as the </span><a aria-describedby="N1072C" class="extra" id=""></a>backhaul<span><span> </span>), which increases the overall bandwidth available to the customer. Another major benefit of fiber is its resistance to electromagnetic interference.</span></p>
+<p><span>如前所述，電纜和xDSL網絡都受益於將光纖集成到後端（稱為回程）中，從而增加了可供客戶使用的整體帶寬。 纖維的另一個主要優點是抗電磁干擾。</span></p>
+<br />P118 Internet Connectivity << <a href='P118 Internet Connectivity.html'>Previous</a> <a href='P120 Setting up a Network.html'>Next</a> >> P120 Setting up a Network</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
