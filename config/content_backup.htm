@@ -46,8 +46,17 @@
 </tr>
 <tr style="height: 15px;">
 <td style="height: 15px;">W6:</td>
-<td style="height: 15px;"><span></span></td>
-<td style="height: 15px;"><span></span></td>
+<td style="height: 15px;"><span>完成英翻中文放到網頁上</span><span></span></td>
+<td style="height: 15px;">
+<p>PCH15:50%</p>
+</td>
+</tr>
+<tr style="height: 15px;">
+<td style="height: 15px;">W7:</td>
+<td style="height: 15px;"><span>完成英翻中文放到網頁上</span></td>
+<td style="height: 15px;">
+<p>PCH16:100%</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -365,7 +374,7 @@
 <p></p>
 <p>In this module, we will discuss the various types of Internet connectivity for networks. Essentially, this connectivity provides our link to the wide area network (WAN). Each type of connection has benefits and drawbacks, so it is important that you, as a technician, understand which WAN connectivity method you should use in a given scenario. Also, we will cover the basic methods of connecting a small office/home office (SOHO) network, to include wireless devices and connection to the Internet.</p>
 <p>在本模塊中，我們將討論網絡的各種類型的Internet連接。 本質上，這種連通性提供了我們到廣域網（WAN）的鏈接。 每種類型的連接都有其優點和缺點，因此，作為一名技術人員，了解在給定方案中應使用哪種WAN連接方法非常重要。 此外，我們還將介紹連接小型辦公室/家庭辦公室（SOHO）網絡的基本方法，包括無線設備和與Internet的連接。</p>
-<h3>P119 Networking: Internet Connectivity</h3>
+<h3>P119 Networking  Internet Connectivity</h3>
 <p>The oldest method of Internet connectivity is the dial-up network, usually abbreviated as DUN. Dial-up networking uses the public telephone lines using an analog audible signal over the line, which provides a maximum speed of 56 Kbps. The public switched telephone network (PSTN) is made up of multiple telephone carriers from around the world. Analog connections (voice and data) using the PSTN are called plain old telephone service (POTS) connections. To connect to the Internet using POTS, you needed both a modem and a dial-up Internet service provider (ISP) to answer your dial-up call.</p>
 <p>最早的Internet連接方法是撥號網絡，通常縮寫為DUN。 撥號網絡使用公用電話線，該公用電話線在線路上使用模擬聲音信號，最大速度為56 Kbps。 公共交換電話網（PSTN）由來自世界各地的多個電話運營商組成。 使用PSTN的模擬連接（語音和數據）稱為普通舊電話服務（POTS）連接。 要使用POTS連接到Internet，您需要調製解調器和撥號Internet服務提供商（ISP）來應答您的撥號電話。</p>
 <p>A modem is a device that converts 1s and 0s from their digital state into an audible state that is transferred over a standard telephone line. Modem stands for modulate/demodulate, which is the process of the digital data being converted to/from analog for transmission. Modems can reside in or be connected to computers in multiple ways, including:</p>
@@ -429,9 +438,20 @@
 <p>There are really only 11 steps to set up a small office, home office (SOHO) network:</p>
 <p>設置小型辦公室，家庭辦公室（SOHO）網絡實際上只有11個步驟：</p>
 <ol>
-<li>Decide on the type of Internet connection you will use. The ISP you choose will determine the type of modem you need and whether you buy or lease it. For a small office or home office, your most obvious choices will most likely be fiber, cable, or DSL, although a satellite, WiMAX, or cellular connection might be viable.</li>
+<li>Decide on the type of Internet connection you will use. The ISP you choose will determine the type of modem you need and whether you buy or lease it. For a small office or home office, your most obvious choices will most likely be fiber, cable, or DSL, although a satellite, WiMAX, or cellular connection might be viable.確定您將使用的Internet連接類型。 您選擇的ISP將確定所需的調製解調器類型以及是否購買或租賃它。 對於小型辦公室或家庭辦公室，儘管衛星，WiMAX或蜂窩連接可能可行，但最顯而易見的選擇很可能是光纖，電纜或DSL。</li>
+<li>Determine how your workstations, often referred to as clients, will connect to the router. Will you use a wireless access point or wired Ethernet switch?確定您的工作站（通常稱為客戶端）如何連接到路由器。 您將使用無線接入點還是有線以太網交換機？</li>
+<li>Choose the modem and router that will support your first two choices.選擇將支持您的前兩個選擇的調製解調器和路由器。</li>
+<li>Set up the account with the ISP. They will come to your location to set up the CPE, including any wiring to the location where you determine the modem is to be placed. Whether you chose to lease or buy your own modem, the ISP usually offers a service to set up the connection between the modem and your LAN router. You also have the option of installing it yourself.使用ISP設置帳戶。 他們將來到您的位置來設置CPE，包括到您確定要放置調製解調器的位置的任何佈線。 無論您選擇租賃還是購買自己的調製解調器，ISP通常都會提供一項服務來建立調製解調器與LAN路由器之間的連接。 您也可以選擇自己安裝它。</li>
+<li>Cable the modem and router together.將調製解調器和路由器連接在一起。</li>
+<li>Configure the router and wireless access point (if used).配置路由器和無線訪問點（如果使用）。將每個客戶端連接到網絡（電纜或無線），並驗證它們是否正常運行。</li>
+<li>Connect each client to the network (cabled or wireless) and verify they are working properly.將每個設備配置為同一工作組的一部分或創建一個家庭組； 這將允許您配置每個客戶端以共享打印機和文件共享等資源。</li>
+<li>Configure each device to be part of the same workgroup or create a homegroup; this will allow you to configure each client to share resources like printers and file sharing.在每個客戶端上設置文件和打印共享，以指定要共享的資源。</li>
+<li>Set up file and print sharing on each client designating which resources to share.</li>
+<li>Test each client to verify they can reach the Internet.測試每個客戶端以驗證他們可以訪問Internet。</li>
+<li>Test the resources you shared in step 9 to make sure they are connected. If everything is working, you have an effective, Internet-connected workgroup that can share resources internally, as well.測試您在步驟9中共享的資源，以確保它們已連接。 如果一切正常，您將擁有一個有效的，與Internet連接的工作組，該工作組也可以在內部共享資源。</li>
 </ol>
-<p>確定您將使用的Internet連接類型。 您選擇的ISP將確定所需的調製解調器類型以及是否購買或租賃它。 對於小型辦公室或家庭辦公室，儘管衛星，WiMAX或蜂窩連接可能可行，但最顯而易見的選擇很可能是光纖，電纜或DSL。</p>
+<p>As you can see, step six asks you to configure a wireless router. Watch this video to see more explanation on how to configure a SOHO wireless router.</p>
+<p>如您所見，第六步要求您配置無線路由器。 觀看此視頻，以了解有關如何配置SOHO無線路由器的更多說明。</p>
 </div>
 </div>
 </div>
