@@ -146,7 +146,7 @@
 <div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">Email has evolved a lot over the years, but still operates on three main protocols. Simple mail transfer protocol (SMTP) is an Internet standard for sending email and most outbound email is sent using SMTP. SMTP uses port 25 to send email from network devices.<br/><br/>POP3 is the most common account type for personal email, but messages are typically deleted from the server when you check your email.<br/><br/>Internet message access protocol (IMAP) servers let you work with email messages without downloading them to your computer first. This allows for email to be synchronized (synced) across multiple devices, including your desktop, laptop, tablet, and smartphone. IMAP uses port 143 to receive and synchronize your email. The real benefit of using IMAP, especially in today’s multiple device access world, is that it can change the read and delete state of messages across the multiple devices. For example, if I read a message on my phone, when I log into my desktop, the message will also show as having been read already.<br/></span></div>
 <div class="result-shield-container tlid-copy-target" tabindex="0"></div>
 <div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">多年來，電子郵件已經有了很大的發展，但是仍然可以在三種主要協議上運行。簡單郵件傳輸協議（SMTP）是用於發送電子郵件的Internet標準，大多數出站電子郵件都是使用SMTP發送的。 SMTP使用端口25從網絡設備發送電子郵件。<br/><br/>POP3是最常見的個人電子郵件帳戶類型，但是當您檢查電子郵件時，通常會將郵件從服務器中刪除。<br/><br/>Internet郵件訪問協議（IMAP）服務器使您可以處理電子郵件，而無需先將其下載到計算機上。這允許跨多個設備（包括台式機，筆記本電腦，平板電腦和智能手機）同步電子郵件。 IMAP使用端口143接收和同步您的電子郵件。使用IMAP的真正好處（尤其是在當今的多設備訪問世界中）是，它可以更改跨多個設備的消息的讀取和刪除狀態。例如，如果我在手機上閱讀了一條消息，則當我登錄到桌面時，該消息也將顯示為已被閱讀。</span></div>
-<h3 class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">P109 FTP</span></h3>
+<h3>P109 FTP</h3>
 <div class="result-shield-container tlid-copy-target" tabindex="0"></div>
 <div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW">In the OSI (Open Systems Interconnection) model, the application layer uses protocols such as trivial file transfer protocol (TFTP), file transfer protocol (FTP), and file transfer protocol secure (FTPS using TLS/SSL) to allow users to migrate data in a client-server model. FTP concerns itself with data only and as such eliminates the overhead of extraneous information such as what HTTP allows in addition to the actual data (advertisements, banners, images, etc.). This alleviates processing and bandwidth overhead and allows the client to simply retrieve the data from the server.<br/><br/>FTP services can be accessed using client software such as ftp.exe (provided in all Microsoft operating systems), third-party software such as Filezilla or WinSCP, and any modern/current browser. Most light-duty users outside a corporate environment will not use a client FTP (or its secure version) because web browsers can negotiate FTP as well as HTTP. Public FTP servers allow for an anonymous user name so the client can reach file directories specifically designed for public access.<br/><br/>These network communications are passed through the presentation layer to the session layer, where sockets and sessions are created using logical port numbers as defined by TCP or UDP. TCP is stateful, connection-oriented and reliable. UDP is stateless, connectionless, and less reliable. The combination of source and destination address coupled with the logical port number creates a network socket, which establishes the session for process-to-process communication. The material in this section is used under CC-BY license from<a href="https://en.wikipedia.org/wiki/Transport_layer" id="_i_0" lang="" target="_blank">https://en.wikipedia.org/wiki/Transport_layer</a><span>.</span></span></div>
 <div class="result-shield-container tlid-copy-target" tabindex="0"></div>
@@ -226,7 +226,7 @@
 <p class="result tlid-copy-target" style="text-align: center;"><img alt="" height="109" src="/images/image10.png" width="533"/></p>
 <p class="result tlid-copy-target" style="text-align: left;">Without the passive mode workaround, a third-party FTP client, Mac, or Linux this is as far as you can go. However, in the corporate environment you might be required to troubleshoot FTP on the local intranet, which would most likely be set to active FTP. Clearly, the need for command-line FTP service is fairly limited compared to using a browser.</p>
 <p class="result tlid-copy-target" style="text-align: left;">如果沒有被動模式解決方法，則只能使用第三方FTP客戶端，Mac或Linux。 但是，在公司環境中，可能需要對本地Intranet上的FTP進行故障排除，這很可能會設置為活動FTP。 顯然，與使用瀏覽器相比，命令行FTP服務的需求非常有限。</p>
-<h3 class="result-shield-container tlid-copy-target" tabindex="0">P110 SSL</h3>
+<h3>P110 SSL</h3>
 <p>Secure sockets layer (SSL) is a cryptographic protocol designed to secure network communications at the application layer. Netscape developed the original protocol in 1995 and SSL became deprecated and was replaced by transport layer security (TLS) in 2015. For more information about SSL, visit this website.</p>
 <p>The most common place to see TLS/SSL in action is in your web browser. For example, most all web sites now default from http (port 80) to https (port 443) with TLS. It is a client-server model where the client initiates the request to connect and the server offers the secure protocol.</p>
 <p>安全套接字層（SSL）是一種加密協議，旨在保護應用程序層的網絡通信安全。 Netscape在1995年開發了原始協議，並且不贊成使用SSL，並在2015年由傳輸層安全性（TLS）代替。有關SSL的更多信息，請訪問此網站。</p>
@@ -247,7 +247,7 @@
 <p>Overview</p>
 <p>The popularity of wireless local area networks (WLAN) has increased exponentially because WLAN enables people to remain connected to the network and the Internet without being tethered by wires. In this unit, we are going to cover the concepts, components, standards, design considerations, and security of WLANs. IEEE 802.11 is the overarching standard for wireless LAN technology, and was developed and is maintained by the Institute of Electrical and Electronics Engineers (IEEE) to provide wireless Ethernet connectivity to a wired IEEE 802.3 network.</p>
 <p>無線局域網（WLAN）的普及已成倍增加，因為WLAN使人們能夠保持連接到網絡和Internet，而不必受到電線的束縛。 在本單元中，我們將介紹WLAN的概念，組件，標準，設計注意事項和安全性。 IEEE 802.11是無線LAN技術的總體標準，由電氣和電子工程師協會（IEEE）開發和維護，以提供與有線IEEE 802.3網絡的無線以太網連接。<br/>WLAN Concepts<br/><span>Wireless local area networks are broken down into two generalized categories: ad-hoc WLANs and infrastructure WLANs. In ad hoc wireless networks, the wireless devices communicate directly with each other without the need for a wireless access point. This mode is similar to a peer-to-peer network topology, where each device connects to each other device in a mesh configuration using radio frequency waves directly between each wireless device’s interface card. This is the wireless equivalent of connecting two workstations together using a crossover cable, thereby eliminating the need for network infrastructure like hubs and switches.</span><span>無線局域網分為兩大類：即席WLAN和基礎設施WLAN。 在自組織無線網絡中，無線設備之間直接相互通信，而無需無線接入點。 此模式類似於點對點網絡拓撲，在這種拓撲中，每個設備都在網狀配置中使用射頻波直接在每個無線設備的接口卡之間連接到彼此。 這相當於使用交叉電纜將兩個工作站連接在一起的無線方式，從而消除了對集線器和交換機等網絡基礎設施的需求。</span><span></span><br/><span>The second category, infrastructure WLANs, is the version that is most often and widely utilized. When operating in infrastructure mode, the wireless devices communicate to a centralized wireless router or wireless access point, and then use that centralized device to initiate communication with other wireless or wired devices that are also attached to the centralized device. This is the wireless equivalent of connecting multiple workstations to a common hub or switch and utilizing that network device to create communication between the workstations.</span><span>第二類是基礎設施WLAN，是最常用和廣泛使用的版本。 當在基礎結構模式下運行時，無線設備與集中式無線路由器或無線接入點進行通信，然後使用該集中式設備啟動與也連接到該集中式設備的其他無線或有線設備的通信。 這相當於將多個工作站連接到公共集線器或交換機，並利用該網絡設備在工作站之間創建通信。</span></p>
-<h3><span>P113 Wireless Devices</span></h3>
+<h3>P113 Wireless Devices</h3>
 <p><span>As previously stated, most wireless networks utilize infrastructure mode and make use of a wireless router or wireless access point to connect the multitude of wireless devices in a given network. A wireless router is used in most small office/home office (SOHO) networks. These devices combine a router, a switch, and a wireless access point and serve as a base station and gateway for the wireless devices. The wireless router allows the wireless devices to communicate with each other using its wireless access point and switch functionality, and then uses its router functionality to connect devices to the remote network: in most cases, the Internet. The wireless router often combines multiple devices into a single, small device. These features include a wireless access point (WAP), a switch, a router, a firewall, and a modem (either cable, fiber, or DSL depending on the Internet service provider).</span></p>
 <p><span></span></p>
 <p><span>如前所述，大多數無線網絡都利用基礎架構模式，並利用無線路由器或無線接入點來連接給定網絡中的眾多無線設備。 在大多數小型辦公室/家庭辦公室（SOHO）網絡中使用無線路由器。 這些設備將路由器，交換機和無線接入點結合在一起，並充當無線設備的基站和網關。 無線路由器允許無線設備使用其無線接入點和交換機功能相互通信，然後使用其路由器功能將設備連接到遠程網絡：在大多數情況下為Internet。 無線路由器通常將多個設備組合為一個小型設備。 這些功能包括無線訪問點（WAP），交換機，路由器，防火牆和調製解調器（電纜，光纖或DSL，具體取決於Internet服務提供商）。</span></p>
@@ -259,7 +259,7 @@
 <p><span>Wireless network interface cards (NICs) for WiFi, Bluetooth, and infrared are generally integrated into motherboard circuitry. If your computer doesn’t have one built in, you have the ability to add one either using an external USB wireless network adapter, or installing one in a PCIe expansion slot; just remember to install the appropriate drivers for your operating system to enable proper operations.</span></p>
 <p><span></span></p>
 <p><span>用於WiFi，藍牙和紅外的無線網絡接口卡（NIC）通常集成在主板電路中。 如果您的計算機沒有內置計算機，則可以使用外部USB無線網絡適配器添加計算機，也可以在PCIe擴展插槽中安裝計算機。 只需記住為您的操作系統安裝適當的驅動程序即可啟用正確的操作。</span></p>
-<h3><span>P114 Wireless Standards</span></h3>
+<h3>P114 Wireless Standards</h3>
 <p><span></span></p>
 <p><span>Background and History</span></p>
 <p><span></span></p>
@@ -360,7 +360,7 @@
 </div>
 <div class="text-wrap tlid-copy-target">
 <div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">單擊此處以訪問802.11無線網絡標準表。</span></span></div>
-<h3 class="result-shield-container tlid-copy-target" tabindex="0">P116 Wireless Networking Types</h3>
+<h3>P116 Wireless Networking Types</h3>
 <p>In addition to Wi-Fi networks, there are other wireless options that exist, such as Bluetooth and infrared. These types of technologies are usually used for Personal Area Networks (PANs) in order to connect (or pair) two devices in an ad hoc manner.</p>
 <p>Bluetooth radio is used to connect many kinds of devices, including mice, keyboards, remotes, smartphones, tablets, printers, projectors, and many others. Just as USB replaced most cables between devices and the workstation, Bluetooth replaces most previous wireless technologies for personal area networks (like infrared). Bluetooth does not require direct line of sight between connected devices. Bluetooth is a low-speed, short-range networking technology that comes in three classes. Class 1, which is not common, can transmit up to 100 meters. Class 2, the most common Bluetooth in use today, can travel up to 10 meters. Class 3, a very short-range variant, only goes one meter. Bluetooth can operate at up to three Mbps, which in today’s modern computer networks is considered extremely slow.</p>
 <p>Infrared existed before Bluetooth and was a short-range, low-speed, line-of-sight communication path. It was heavily used to connect personal digital assistants (PDAs) and wireless mice and keyboards. Not common in contemporary computers, it was replaced almost entirely by Bluetooth, but some machines keep an integrated infrared sensor for backward compatibility. If you have a need for infrared, but it isn’t included on your machine, you can add an infrared sensor through a USB adapter.</p>
@@ -421,7 +421,9 @@
 <p>5G是正在開發中的標準，預計將在2020年代初發布。 該標準的前提是，Internet連接已成為一種需求，而非奢侈。 儘管蜂窩市場已經脫離了移動WiMAX，但該基礎設施仍在全球範圍內用於固定無線。 物聯網（IoT）是一個短語，用於描述21世紀當今正在發生的融合，屆時，任何功能強大的設備都將連接到Internet。 從智能家居及其子系統，到家用電器，再到具有Wi-Fi和GPS的汽車，用戶將從寬帶技術和“始終在線”的連接中受益。 光纖和Wi-Fi行業中的5G標準和其他主要舉措有望朝著這一目標邁進。 WiMAX論壇等組織和許多其他行業領導者正在大力投資，以在IoT框架下整合設備連接性。</p>
 <p><span>As we previously mentioned, both cable and xDSL networks benefit by incorporating fiber into the back end (known as the </span><a aria-describedby="N1072C" class="extra" id=""></a>backhaul<span><span> </span>), which increases the overall bandwidth available to the customer. Another major benefit of fiber is its resistance to electromagnetic interference.</span></p>
 <p><span>如前所述，電纜和xDSL網絡都受益於將光纖集成到後端（稱為回程）中，從而增加了可供客戶使用的整體帶寬。 纖維的另一個主要優點是抗電磁干擾。</span></p>
-<h3><span>P120 Setting up a Network</span></h3>
+<h3>P120 Setting up a Network</h3>
+<p><span>The first and probably the most important step in deploying a wireless network is the planning phase. A site survey is the process of evaluating a network solution to deliver the required coverage, data rates, network capacity, roaming capacity, and quality of service.</span></p>
+<p><span>部署無線網絡的第一步也是最重要的一步是規劃階段。 站點調查是<h3>P120 Setting up a Network</h3>
 <p><span>The first and probably the most important step in deploying a wireless network is the planning phase. A site survey is the process of evaluating a network solution to deliver the required coverage, data rates, network capacity, roaming capacity, and quality of service.</span></p>
 <p><span>部署無線網絡的第一步也是最重要的一步是規劃階段。 站點調查是評估網絡解決方案以提供所需覆蓋範圍，數據速率，網絡容量，漫遊容量和服務質量的過程。</span></p>
 <p><span>Factors that affect the number of access points needed in a building include:</span></p>
@@ -454,7 +456,7 @@
 <p>As you can see, step six asks you to configure a wireless router. Watch this video to see more explanation on how to configure a SOHO wireless router.</p>
 <p>如您所見，第六步要求您配置無線路由器。 觀看此視頻，以了解有關如何配置SOHO無線路由器的更多說明。</p>
 <p>https://youtu.be/vPlm2ETkgmc</p>
-</div>
+</span></p></div>
 </div>
 </div>
 </div>
@@ -464,4 +466,35 @@
 <p>init.py 位於  up_dir 目錄, 可以設定 site_title 與 uwsgi 等變數.</p>
 <p></p>
 <h3>TEST</h3>
+<p></p>
+<h1>HW2作業</h1>
+<h1>HW3作業</h1>
+<h2>10 List Overlap Comprehensions</h2>
+<p><span>列表重疊理解</span></p>
+<p><span>Exercise 10 (and <a href="https://www.practicepython.org/solution/2014/04/16/10-list-overlap-comprehensions-solutions.html">Solution</a>)</span></p>
+<p><span>This week’s exercise is going to be revisiting an old exercise (see <a href="https://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html">Exercise 5</a><span>), except require the solution in a different way.</span></span></p>
+<p><span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">本週的練習將重溫舊的練習（請參閱練習5），但需要以其他方式解決。<br/><br/><span>and write a program that returns a list that contains only the elements that are common between the lists (without duplicates). Make sure your program works on two lists of different sizes. Write this </span><em>using at least one list comprehension</em><span>. (</span><em>Hint: Remember<span> </span><a href="https://www.practicepython.org/exercise/2014/03/19/07-list-comprehensions.html">list comprehensions</a><span> </span>from Exercise 7</em><span>).</span><br/></span></p>
+<p>並編寫一個程序，該程序返回一個列表，該列表僅包含列表之間的公共元素（無重複項）。 確保您的程序可以在兩個不同大小的列表上運行。 至少使用一個列表理解來編寫。 （提示：請記住練習7中的列表理解）。</p>
+<p>The original formulation of this exercise said to write the solution using one line of Python, but a few readers pointed out that this was impossible to do without using sets that I had not yet discussed on the blog, so you can either choose to use the original directive and read about the <a href="https://docs.python.org/3.3/library/stdtypes.html?highlight=set#set">set command in Python 3.3</a>, or try to implement this on your own and use at least one list comprehension in the solution.</p>
+<p>此練習的原始表述是使用一行Python編寫解決方案，但是一些讀者指出，如果不使用我在博客上尚未討論過的集，這是不可能做到的，因此您可以選擇使用 原始指令，並了解Python 3.3中的set命令，或者嘗試自己實現該指令並在解決方案中至少使用一個列表理解。</p>
+<p>Extra:Randomly generate two lists to test this</p>
+<p>額外：隨機生成兩個列表進行測試</p>
+<p>Discussion</p>
+<p><br/>Concepts for this week:</p>
+<p>List comprehensions<br/>Random numbers, continued</p>
+<p>討論區<br/>本週的概念：</p>
+<p>清單理解<br/>隨機數，續</p>
+<p>We already discussed list comprehensions in Exercise 7, but they can be made much more complicated.</p>
+<p>我們已經在練習7中討論了列表理解，但是可以使它們複雜得多。</p>
+<p>For example:</p>
+<p>x = [1, 2, 3]<br/> y = [5, 10, 15]<br/> allproducts = [a*b for a in x for b in y]</p>
+<p>At the end of this piece of code, allproducts will contain the list [5, 10, 15, 10, 20, 30, 15, 30, 45]. So you can put multiple for loops inside the comprehension. But you can also add more complicated conditionals:</p>
+<p>在這段代碼的最後，所有產品都將包含列表[5、10、15、10、20、30、15、30、45]。 因此，您可以在理解中放入多個for循環。 但是您還可以添加更複雜的條件：</p>
+<p>x = [1, 2, 3]<br/> y = [5, 10, 15]<br/> customlist = [a*b for a in x for b in y if a*b%2 != 0]<br/>Now customlist contains [5, 15, 15, 45] because only the odd products are added to the list.<br/><br/>In general, the list comprehension takes the form:<br/><br/> [EXPRESSION FOR_LOOPS CONDITIONALS]<br/>as shown in the examples above.<br/>現在，customlist包含[5、15、15、45]，因為只有奇數產品被添加到列表中。<br/><br/>通常，列表理解採用以下形式：<br/><br/>[EXPRESSION FOR_LOOPS條件]<br/>如以上示例所示。<br/><br/>Random numbers, continued<br/>Try to use the <a href="https://docs.python.org/3.0/library/random.html">Python random documentation</a> to figure out how to generate a random list. As a hint look below:</p>
+<p>隨機數，續<br/>嘗試使用Python隨機文檔來弄清楚如何生成隨機列表。 提示如下：</p>
+<p>a = random.sample(range(100), 5)</p>
+<p>This line of code will leave a containing a list of 5 random numbers from 0 to 99.</p>
+<p>這行代碼將保留一個包含從0到99的5個隨機數的列表。</p>
+<p></p>
 <p></p>
