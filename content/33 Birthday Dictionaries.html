@@ -133,49 +133,22 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">P114 Wireless Standards << <a href='P114 Wireless Standards.html'>Previous</a> <a href='P116 Wireless Networking Types.html'>Next</a> >> P116 Wireless Networking Types<br /><h1>P115 Privacy and Security</h1>
-<p>Due to the nature of Wi-Fi being transmitted through radio frequencies, the data transferred is susceptible to being viewed and captured by any other radio receiver. Encryption and network security have become a paramount concern for IT professionals at all levels. If a Wi-Fi network is set up without encryption it is “open,” and anybody with packet sniffing software in the vicinity can capture the transmissions between the host and the wireless access point. Public cafes and retailers offering open access do so as a courtesy, but the user must know that any online login information, such as connecting to a bank, Facebook, or Twitter, is not secure and is susceptible to capture. For the prospective technician, you must know the current encryption types and best practices to secure a WLAN.</p>
-<p>由於Wi-Fi會通過射頻傳輸，因此傳輸的數據很容易被其他任何無線電接收器查看和捕獲。 加密和網絡安全已成為各級IT專業人員最關心的問題。 如果建立了未加密的Wi-Fi網絡，則它是“開放的”，附近裝有數據包嗅探軟件的任何人都可以捕獲主機與無線訪問點之間的傳輸。 提供開放訪問權限的公共咖啡館和零售商這樣做是出於禮貌，但是用戶必須知道任何在線登錄信息（例如連接到銀行，Facebook或Twitter）都不安全並且容易被捕獲。 對於準技術人員，您必須了解當前的加密類型和最佳做法以保護WLAN。</p>
-<p></p>
-<p>Encryption Types</p>
-<p></p>
-<p>In order to provide security for wireless networks, the 802.11 standards provide for three major types of password protection/encryption: wired equivalent privacy (WEP), Wi-Fi protected access (WPA), and Wi-Fi protected access 2 (WPA2).</p>
-<p>為了提供無線網絡的安全性，802.11標準提供了三種主要的密碼保護/加密類型：有線等效保密（WEP），Wi-Fi保護訪問（WPA）和Wi-Fi保護訪問2（WPA2）。</p>
-<p></p>
-<p>Wired Equivalent Privacy (WEP)</p>
-<p></p>
-<p>In the original 802.11 standard, the only security provided was WEP, which claims to be as secure as a wired network connection. This wireless connection was secured using encryption with a 40-bit WEP key that all access points and client devices would use (preshared key). This symmetric encryption was a good idea, but since the key was so small (40 bits), it was quickly broken by attackers.</p>
-<p>To solve this, WEP evolved into using a 64-bit key and could support keys up to 128 bits, which would provide strong encryption. Unfortunately, the WEP algorithm used for encryption also relied on using an initialization vector (IV) in combination with the preshared key to create the strong encryption, but the IV was only created at 24 bits and is sent in plain text or clear text during the preshared key exchange. This was quickly compromised by attackers using a brute-force attack to determine the password using the weak IV. Many utilities exist in the open-source realm that can crack WEP passwords within just a few minutes on modern hardware. For this reason, WEP is considered insecure today and should never be used in your networks.</p>
-<p>在原始802.11標準中，唯一提供的安全性是WEP，它聲稱與有線網絡連接一樣安全。通過使用所有訪問點和客戶端設備都將使用的40位WEP密鑰（預共享密鑰）進行加密來保護此無線連接。這種對稱加密是一個好主意，但是由於密鑰太小（40位），攻擊者很快就將其破壞了。</p>
-<p>為了解決這個問題，WEP演變為使用64位密鑰，並且可以支持高達128位的密鑰，從而可以提供強大的加密功能。不幸的是，用於加密的WEP算法還依賴於使用初始化向量（IV）結合預共享密鑰來創建強加密，但是IV僅以24位創建，並且在加密期間以純文本或明文發送。預共享密鑰交換。攻擊者使用強力攻擊使用弱IV來確定密碼，從而很快破壞了這一安全性。開源領域中存在許多實用程序，可以在短短幾分鐘內在現代硬件上破解WEP密碼。因此，WEP在今天被認為是不安全的，永遠不要在您的網絡中使用。</p>
-<p></p>
-<p>Wi-Fi Protected Access (WPA)</p>
-<p></p>
-<p>The WPA standard was introduced to replace the insecure WEP. WPA used a 48-bit IV in place of WEP’s 24-bit IV. This upgraded IV uses a temporal key integrity protocol (TKIP). TKIP is an IEEE standard that was designed to provide more secure encryption. TKIP is a suite of algorithms that allows WLAN equipment to upgrade to TKIP without replacing hardware. TKIP encrypts each data packet with a unique encryption key, and the keys are much stronger than WEP. To increase key strength, TKIP includes four additional algorithms.</p>
-<p>In addition to TKIP, the WPA standard uses message integrity check (MIC) to confirm that data was not modified in transit. MIC uses a “hash” to verify that a message has not been altered. WPA supported both preshared key mode and enterprise mode. In enterprise mode, users are required to authenticate before exchanging their keys and each key between the client and access point is only temporary, reducing the chance of compromise. Unfortunately, WPA also suffered security flaws centered on the use of passphrases and pre-shared key (PSK) management and is now also considered to be unsecure.</p>
-<p>引入了WPA標準來代替不安全的WEP。 WPA使用48位IV代替了WEP的24位IV。此升級的IV使用臨時密鑰完整性協議（TKIP）。 TKIP是旨在提供更安全的加密的IEEE標準。 TKIP是一套算法，可以使WLAN設備升級到TKIP，而無需更換硬件。 TKIP使用唯一的加密密鑰對每個數據包進行加密，並且該密鑰比WEP強得多。為了增強按鍵強度，TKIP包括四個附加算法。</p>
-<p>除了TKIP，WPA標準還使用消息完整性檢查（MIC）來確認數據在傳輸過程中沒有被修改。 MIC使用“哈希”來驗證消息是否未被更改。 WPA支持預共享密鑰模式和企業模式。在企業模式下，要求用戶在交換密鑰之前進行身份驗證，並且客戶端和訪問點之間的每個密鑰只是臨時的，從而減少了洩露的機會。不幸的是，WPA還遭受了圍繞密碼短語和預共享密鑰（PSK）管理的安全缺陷，現在也被認為是不安全的。</p>
-<p></p>
-<p>Wi-Fi Protected Access 2 (WPA2)</p>
-<p></p>
-<p>Wi-Fi protected access version 2 (WPA2) was implemented to replace both WEP and WPA because of the insecurities with the 24-bit and 48-bit initialization vectors. WPA2 requires stronger encryption and integrity checking, using counter mode (CCMP) with cipher block chaining message authentication code protocol for integrity checking. Additionally, the encryption used for WPA2 is the advanced encryption standard (AES) with a 128-bit key, the same algorithm used by the United States government to protect their classified networks. Using WPA2 creates a secure wireless network, but only when used with good passwords and shared keys. WPA2 also supports enterprise mode for centralized user authentication (used in corporate networks) and a personal mode for preshared key support (used in most homes and small offices). The key to security with WPA2 is a strong password, since the current method of breaking into a WPA2 network is to use brute force attacks against the preshared key. If your key is long and complex, the attackers will not be able to penetrate your WPA2 wireless networks.</p>
-<p>由於24位和48位初始化向量的不安全性，實施了Wi-Fi保護訪問版本2（WPA2）來替代WEP和WPA。 WPA2需要使用計數器模式（CCMP）和密碼塊鏈接消息身份驗證代碼協議進行更強的加密和完整性檢查，以進行完整性檢查。此外，用於WPA2的加密是具有128位密鑰的高級加密標準（AES），與美國政府用於保護其機密網絡的算法相同。使用WPA2可以創建安全的無線網絡，但前提是要使用良好的密碼和共享密鑰。 WPA2還支持用於集中式用戶身份驗證的企業模式（用於公司網絡）和用於預共享密鑰支持的個人模式（用於大多數家庭和小型辦公室）。使用WPA2進行安全保護的密鑰是一個強密碼，因為當前闖入WPA2網絡的方法是對預共享密鑰使用暴力攻擊。如果密鑰又長又復雜，攻擊者將無法穿透您的WPA2無線網絡。</p>
-<p></p>
-<p>Wi-Fi Protected Access 2 Enterprise</p>
-<p>WPA2 enterprise is a client/server model using the remote authentication dial-in user service (RADIUS) protocol found in larger corporate networks. The RADIUS server runs in the application layer using UDP (user datagram protocol) as a transport method, and is usually a software background service running on a UNIX or Windows server. WPA2 enterprise eliminates a shared key and replaces it with a username and a password to connect to the corporate Wi-Fi network.</p>
-<p><span>Click </span><a href="https://en.wikipedia.org/wiki/Template:802.11_network_standards" id="_i_3" lang="" target="_blank">here</a><span><span> </span>to access a table of 802.11 wireless networking standards.</span></p>
-<p>WPA2企業版是使用大型企業網絡中使用的遠程身份驗證撥入用戶服務（RADIUS）協議的客戶端/服務器模型。 RADIUS服務器使用UDP（用戶數據報協議）作為傳輸方法在應用程序層中運行，通常是在UNIX或Windows服務器上運行的軟件後台服務。 WPA2企業消除了共享密鑰，並將其替換為用戶名和密碼以連接到公司的Wi-Fi網絡。</p>
-<div class="tlid-results-container results-container">
-<div class="tlid-result result-dict-wrapper">
-<div class="result tlid-copy-target">
-<div class="result-header">
-<div aria-label="收藏翻譯" class="starbutton jfk-button-flat jfk-button unstarred" data-tooltip="收藏翻譯" data-tooltip-align="t,c" role="button" tabindex="0">
-<div class="jfk-button-img"></div>
-</div>
-</div>
-<div class="text-wrap tlid-copy-target">
-<div class="result-shield-container tlid-copy-target" tabindex="0"><span class="tlid-translation translation" lang="zh-TW"><span class="" title="">單擊此處以訪問802.11無線網絡標準表。</span></span></div>
-<br />P114 Wireless Standards << <a href='P114 Wireless Standards.html'>Previous</a> <a href='P116 Wireless Networking Types.html'>Next</a> >> P116 Wireless Networking Types</div>
+    <div id="tipue_search_content">28 Max Of Three << <a href='28 Max Of Three.html'>Previous</a> <a href='Discussion topics(討論主題).html'>Next</a> >> Discussion topics(討論主題)<br /><h1>33 Birthday Dictionaries</h1>
+<p>生日字典</p>
+<p>Exercise 33 (and <span style="text-decoration: underline; color: #0000ff;"><a href="https://www.practicepython.org/solution/2017/02/03/33-birthday-dictionaries-solutions.html" style="color: #0000ff; text-decoration: underline;">Solution</a></span>)</p>
+<p><em>This exercise is Part 1 of 4 of the birthday data exercise series. The other exercises are:<span> </span><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html">Part 2</a>,<span> </span><a href="https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html">Part 3</a>, and<span> </span><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html">Part 4</a>.</em></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">此練習是生日數據練習系列4的第1部分。其他練習是：<span style="text-decoration: underline; color: #0000ff;"><a href="https://www.practicepython.org/exercise/2017/02/06/34-birthday-json.html" style="color: #0000ff; text-decoration: underline;">第2部分</a></span>，<span style="text-decoration: underline;"><span style="color: #0000ff;"><a href="https://www.practicepython.org/exercise/2017/02/28/35-birthday-months.html" style="color: #0000ff; text-decoration: underline;">第3部分</a></span></span>和<span style="text-decoration: underline; color: #0000ff;"><a href="https://www.practicepython.org/exercise/2017/04/02/36-birthday-plots.html" style="color: #0000ff; text-decoration: underline;">第4部分</a></span>。</span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr"><span lang="zh-TW"><span>For this exercise, we will keep track of when our friend’s birthdays are, and be able to find that information based on their name. Create a dictionary (in your file) of names and birthdays. When you run your program it should ask the user to enter a name, and return the birthday of that person back to them. The interaction should look something like this:</span></span></p>
+<p class="tw-data-text tw-text-large XcVN5d tw-ta" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="zh-TW">在本練習中，我們將跟踪朋友的生日，並能夠根據他們的姓名查找該信息。在您的文件中創建一個名稱和生日字典。當您運行程序時，應要求用戶輸入名稱，並將該人的生日給他們。交互應如下所示：</span></p>
+<pre><code class="language-pycon" data-lang="pycon">&gt;&gt;&gt; Welcome to the birthday dictionary. We know the birthdays of:
+Albert Einstein
+Benjamin Franklin
+Ada Lovelace
+&gt;&gt;&gt; Who's birthday do you want to look up?
+Benjamin Franklin
+&gt;&gt;&gt; Benjamin Franklin's birthday is 01/17/1706.<br/><br/></code></pre>
+<pre><span lang="zh-TW">&gt;&gt;&gt;歡迎來到生日字典。我們知道以下幾人的生日：</span><br/><span lang="zh-TW">艾爾伯特愛因斯坦</span><br/><span lang="zh-TW">本傑明·富蘭克林</span><br/><span lang="zh-TW">艾達·洛芙蕾絲</span><br/><span lang="zh-TW">&gt;&gt;&gt;您想看誰的生日？</span><br/><span lang="zh-TW">本傑明·富蘭克林</span><br/><span lang="zh-TW">&gt;&gt;&gt;本傑明·富蘭克林的生日是1706年1月17日。</span></pre>
+<br />28 Max Of Three << <a href='28 Max Of Three.html'>Previous</a> <a href='Discussion topics(討論主題).html'>Next</a> >> Discussion topics(討論主題)</div>
         
     <!-- footer -->
       <div class="container">
